@@ -1,7 +1,7 @@
 import React from "react";
 
-function Menu() {
+function Glavnaya() {
   return <div>Menu</div>;
 }
 
-export default Menu;
+export default Glavnaya;

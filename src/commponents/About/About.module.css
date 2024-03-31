@@ -1,0 +1,8 @@
+.sex {
+  font-size: 40px;
+}
+
+.mains {
+  display: flex;
+  justify-content: space-between;
+}

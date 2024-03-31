@@ -1,3 +1,37 @@
-.links {
-  background-color: rgb(255, 187, 255);
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Licorice&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Calligraffitti&family=Licorice&display=swap");
+.title {
+  display: flex;
+  flex-direction: row;
+  height: 130px;
+}
+
+.link {
+  padding-top: 53px;
+  color: rgb(51, 51, 51);
+  text-decoration: none;
+  margin: 0 15px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.link:hover {
+  color: rgb(230, 0, 204);
+  transition: 0.3s;
+  transform: scale(1.1);
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background: rgb(252, 230, 251);
+  color: #fff;
+}
+
+.logo_img {
+  width: 200px;
 }

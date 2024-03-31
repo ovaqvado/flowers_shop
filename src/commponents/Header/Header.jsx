@@ -1,80 +1,39 @@
-import React from "react";
-import About from "../About/About";
-import Catalog from "../Catalog/Catalog";
-import Delivery from "../Delivery/Delivery";
-import Auth from "../Auth/Auth";
-import Basket from "../Basket/Basket";
-import Styles from "../Header/Header.module.css";
-// import { Link } from "react-router-dom";
-import { BrowserRouter as Router, Routes, Link } from "react-router-dom";
-
-export default function Header() {
+import { Link } from "react-router-dom";
+import Style from "./Header.module.css";
+import logo from "../../img/logo_img.png";
+export const Header = (props) => {
   return (
-    <Router>
-      <header>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Главная</Link>
-            </li>
-            <li>
-              <Routes>
-                <Link path="/About" component={About}>
-                  Контакты
-                </Link>
-              </Routes>
-            </li>
-            <li>
-              <Link to="/Auth">Авторизация</Link>
-            </li>
-          </ul>
-        </nav>
-      </header>
-    </Router>
+    <header className={Style.head}>
+      <div className={Style.title}>
+        <img className={Style.logo_img} src={logo} alt="Logo" />
+      </div>
+      <div className={Style.links}>
+        <Link className={Style.link} to="/">
+          Главная
+        </Link>
+        <Link className={Style.link} to="/Catalog">
+          Каталог
+        </Link>
+        <Link className={Style.link} to="/Delivery">
+          Доставка
+        </Link>
+        <Link className={Style.link} to="/Contacts">
+          Контакты
+        </Link>
+        <Link className={Style.link} to="/About">
+          О нас
+        </Link>
+
+        <div></div>
+      </div>
+    </header>
   );
+};
+
+{
+  /* <div className={Style.basket}>
+          <Link className={Style.link} to="/Basket">
+            Корзина
+          </Link>
+        </div> */
 }
-
-// export default function Header() {
-//   return (
-//     <div>
-//       <div>
-//         <img src="" alt="logo" />
-//         <p>Название</p>
-//       </div>
-//       <ul>
-//         <li>
-//           <a href="./Auth">asda</a>
-//         </li>
-//         <Router>
-//           <header>
-//             <nav>
-//               <ul>
-//                 <li>
-//                   <Link to="/Header">Главная</Link>
-//                 </li>
-//                 <li>
-//                   <Link to="/about">Контакты</Link>
-//                 </li>
-//                 <li>
-//                   <Link to="/topics">Темы</Link>
-//                 </li>
-//               </ul>
-//             </nav>
-//           </header>
-//         </Router>
-
-//         <li></li>
-//         <li></li>
-//         <li></li>
-//         <li></li>
-//       </ul>
-//       {/* <div className={Styles["links"]}>
-//         <About />
-//         <Catalog />
-//         <Delivery />
-//         <Auth />
-//         <Basket />
-//       </div> */}
-//     </div>
-//   );
-// }

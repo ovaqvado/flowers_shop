@@ -1,7 +1,9 @@
 import React from "react";
-
+import Card from "../Card/Card";
 function Glavnaya() {
-  return <div>Menu</div>;
+  return <div>
+    <Card />
+  </div>;
 }
 
 export default Glavnaya;

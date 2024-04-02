@@ -1,37 +1,39 @@
-import { createSlice } from "@reduxjs/toolkit";
-const cardSlice = createSlice({
-    name: 'flower',
-    initialState: {
-        flowers: [
-            {
-                name: 'Розы',
-                price: 150,
-                id: 0
-            },
-            {
-                name: 'Тюльпаны',
-                price: 100,
-                id: 1
-            },
-            {
-                name: 'Ромашки',
-                price: 80,
-                id: 2
-            }
-        ]
+import { ADD_CARD } from './actions';
+
+const initialState = {
+    cards: [{
+        title: 'Roza',
+        description: 100,
+
     },
+    {
+        title: 'Tulpan',
+        description: 100,
 
-    reducers: {
-        // addFlowers(state, action) {
-        //     const newFlowers = {
-        //         id: state.flowers.length, 
-        //         ...action.payload
-        //     };
-        //     state.flowers.push(newFlowers);
-        //     console.log(state.flowers);
-        // }
+    },
+    {
+        title: 'Romashka',
+        description: 100,
+
+    },]
+};
+
+const cardSlice = (state = initialState, action) => {
+    switch (action.type) {
+        case ADD_CARD:
+            return {
+                ...state,
+                cards: [
+                    ...state.cards,
+                    {
+                        title: action.payload.title,
+                        description: action.payload.description
+                    }
+                ]
+            };
+        default:
+            return state;
     }
-})
+};
 
-// export const { addFlowers } = cardSlice.actions
-export default cardSlice.reducer
+export default cardSlice;

@@ -1,9 +1,12 @@
 import React from "react";
-import Cards from '../Cards/Cards'
+import CardList from "../Cards/CardList";
+import style from "./Glavnaya.module.css";
 function Glavnaya() {
-  return <div>
-    <Cards />
-  </div>;
+  return (
+    <div className={style.cardMain}>
+      <CardList />
+    </div>
+  );
 }
 
 export default Glavnaya;

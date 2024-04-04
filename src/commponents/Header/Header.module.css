@@ -4,11 +4,20 @@
 .title {
   display: flex;
   flex-direction: row;
-  height: 130px;
+  align-items: center;
+  width: 312.43px;
+  height: 77.43px;
+  margin-left: 30.23px;
+  margin-top: 22px;
+  margin-bottom: 31.41px;
+}
+
+.title_text {
+  color: black;
+  font-size: 30px;
 }
 
 .link {
-  padding-top: 53px;
   color: rgb(51, 51, 51);
   text-decoration: none;
   margin: 0 15px;
@@ -18,9 +27,9 @@
 }
 
 .link:hover {
-  color: rgb(230, 0, 204);
+  color: rgb(255, 140, 242);
+  text-shadow: 1px 1px 6px;
   transition: 0.3s;
-  transform: scale(1.1);
 }
 
 .head {
@@ -33,5 +42,36 @@
 }
 
 .logo_img {
-  width: 200px;
+  width: 57.11px;
+  height: 69.99px;
+}
+.nav_menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.input {
+  padding: 10px;
+  outline: none;
+  background: transparent;
+  border: none;
+}
+.searchDiv {
+  width: 225.6px;
+  height: 34.49px;
+  display: flex;
+  margin-left: 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 16px;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.basket {
+  margin-left: 15px;
+  cursor: pointer;
+  width: 35.15px;
+  height: 33px;
 }

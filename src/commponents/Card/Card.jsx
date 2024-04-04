@@ -1,9 +1,9 @@
 import React from "react";
-import style from './Card.module.css'
+import style from "./Card.module.css";
 import CardItem from "./CardItem";
 function Card() {
   return (
-    <div >
+    <div>
       <CardItem />
     </div>
   );

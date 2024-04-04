@@ -1,13 +1,16 @@
 import { Link } from "react-router-dom";
 import Style from "./Header.module.css";
 import logo from "../../img/logo_img.png";
-export const Header = (props) => {
+import searchInput from "../../img/searchInput.png";
+import Basket from "../../img/Basket.png";
+export const Header = () => {
   return (
     <header className={Style.head}>
       <div className={Style.title}>
         <img className={Style.logo_img} src={logo} alt="Logo" />
+        <div className={Style.title_text}>Get flowers</div>
       </div>
-      <div className={Style.links}>
+      <div className={Style.nav_menu}>
         <Link className={Style.link} to="/">
           Главная
         </Link>
@@ -23,8 +26,11 @@ export const Header = (props) => {
         <Link className={Style.link} to="/About">
           О нас
         </Link>
-
-        <div></div>
+        <img className={Style.basket} src={Basket} alt="Basket" />
+        <div className={Style.searchDiv}>
+          <img className={Style.search_img} src={searchInput} alt="" />
+          <input placeholder="Поиск" type="search" className={Style.input} />
+        </div>
       </div>
     </header>
   );

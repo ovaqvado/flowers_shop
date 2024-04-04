@@ -1,13 +1,13 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import CardItem from "./CardItem";
-
+import style from "./Card.module.css";
 function CardList() {
-  const flowers = useSelector((store)=>store.cardSlice.cards);
+  const flowers = useSelector((store) => store.cardSlice.cards);
   return (
-    <div>
+    <div className={style.cards}>
       {flowers.map((card) => (
-        <CardItem key={сard.id} item={card} />
+        <CardItem item={card} />
       ))}
     </div>
   );

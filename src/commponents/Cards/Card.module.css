@@ -1,21 +1,20 @@
 .card {
+  width: 404.92px;
+  height: 395.55px;
   background-color: #fff;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   padding: 20px;
   margin: 20px;
   transition: transform 0.3s;
-  width: 300px;
-  background-image: url("https://i.pinimg.com/236x/5d/c8/30/5dc8306fed118d1c801252e7a3d90709.jpg");
-}
-
-.cards {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  box-shadow: 10px 10px 10px rgba(255, 170, 234, 0.5);
 }
 
 .card:hover {
   transform: translateY(-5px);
+}
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

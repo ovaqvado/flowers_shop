@@ -20,9 +20,7 @@ export const Header = () => {
         <Link className={Style.link} to="/Delivery">
           Доставка
         </Link>
-        <Link className={Style.link} to="/Contacts">
-          Контакты
-        </Link>
+        <Link className={Style.link}>Контакты</Link>
         <Link className={Style.link} to="/About">
           О нас
         </Link>

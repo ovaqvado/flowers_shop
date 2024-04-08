@@ -1,0 +1,10 @@
+.container_map {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.GoogleMap {
+  width: 100%;
+  height: 945px;
+}

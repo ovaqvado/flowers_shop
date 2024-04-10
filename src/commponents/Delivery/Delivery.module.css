@@ -1,0 +1,63 @@
+.container_delivery {
+  background-color: rgb(252, 230, 251);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.delivery_text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 75px;
+  font-weight: 400;
+  line-height: 90.77px;
+  text-align: left;
+  color: #333333;
+}
+
+.cards_delivery {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  height: 800px;
+}
+
+.info_delivery_pay {
+  width: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.img_delivery_pay {
+  width: 282px;
+  height: 273px;
+}
+
+.info_title {
+  color: #333333;
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 48.41px;
+  margin: 65px 0px 0px 0px;
+}
+
+.info_subtitle {
+  color: #666666;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  text-align: center;
+  font-weight: 400;
+  line-height: 30.26px;
+  text-align: center;
+}
+
+.img_payments {
+  display: flex;
+  padding-top: 30px;
+  gap: 40px;
+}

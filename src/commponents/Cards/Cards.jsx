@@ -6,8 +6,8 @@ import style from "./Card.module.css";
 function Cards(props) {
   return (
     <div className={style.card}>
-      <h3>{props.card.title}</h3>
-      <p>{props.item}</p>
+      <h3>{props.item.name}</h3>
+      <p>{props.item.price}</p>
     </div>
   );
 }

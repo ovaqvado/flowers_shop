@@ -1,8 +1,8 @@
 import { createSlice } from "@reduxjs/toolkit";
 const cardSlice = createSlice({
-  name: "card",
+  name: "flower",
   initialState: {
-    cards: [
+    flower: [
       {
         name: "Роза",
         price: 150,
@@ -39,4 +39,5 @@ const cardSlice = createSlice({
 });
 
 // export const { addProduct } = cardSlice.actions
+
 export default cardSlice.reducer;

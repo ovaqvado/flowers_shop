@@ -1,23 +1,16 @@
+import Cards from "./Cards";
 import React from "react";
-import { connect } from "react-redux";
+import { useSelector } from "react-redux";
 import style from "./Card.module.css";
-const CardList = ({ cards }) => {
+function CardList() {
+  const flowers = useSelector((store) => store.cardSlice.flower);
   return (
     <div className={style.cards}>
-      {cards.map((card) => (
-        <div className={style.card}>
-          <h3>{card.title}</h3>
-          <p>{card.description + "за штуку сука"}</p>
-        </div>
+      {flowers.map((item) => (
+        <Cards item={item}></Cards>
       ))}
     </div>
   );
-};
+}
 
-const mapStateToProps = (state) => {
-  return {
-    cards: state.cards,
-  };
-};
-
-export default connect(mapStateToProps)(CardList);
+export default CardList;

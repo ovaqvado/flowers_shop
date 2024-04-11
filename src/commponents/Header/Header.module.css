@@ -5,6 +5,8 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
+  gap: 17px;
   width: 312.43px;
   height: 77.43px;
   margin-left: 30.23px;
@@ -15,8 +17,9 @@
 .title_text {
   color: black;
   width: 238.29px;
-  height: 70.26px;
-  font-size: 30px;
+  font-size: 40px;
+  font-weight: 400;
+  font-family: var(--font-getFlowers);
   color: #333333;
 }
 
@@ -33,6 +36,7 @@
   color: rgb(255, 140, 242);
   text-shadow: 1px 1px 6px;
   transition: 0.3s;
+  cursor: pointer;
 }
 
 .head {
@@ -40,8 +44,9 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  background: rgb(252, 230, 251);
+  background-color: var(--main-bg-color);
   color: #fff;
+  height: 122px;
 }
 
 .logo_img {

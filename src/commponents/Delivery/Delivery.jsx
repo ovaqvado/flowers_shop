@@ -9,7 +9,7 @@ import terminal from "./images/terminal.svg";
 
 function Delivery() {
   return (
-    <div className={Style.container_delivery}>
+    <div id="Delivery" className={Style.container_delivery}>
       <h1 className={Style.delivery_text}>Доставка и оплата</h1>
       <div className={Style.cards_delivery}>
         <div className={Style.info_delivery_pay}>

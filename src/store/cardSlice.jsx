@@ -27,17 +27,14 @@ const cardSlice = createSlice({
   },
 
   reducers: {
-    // addProduct(state, action) {
-    //     const newProduct = {
-    //         id: state.cards.length, // Генерация уникального id
-    //         ...action.payload
-    //     };
-    //     state.card.push(newProduct);
-    //     console.log(state.card);
-    // }
+    // searchFlowers: (state, action) => {
+    //   state.flower = state.flower.filter((item) => {
+    //     return item.name.includes(action.payload);
+    //   });
+    // },
   },
 });
 
 // export const { addProduct } = cardSlice.actions
-
+// export const { searchFlowers } = cardSlice.actions;
 export default cardSlice.reducer;

@@ -1,0 +1,31 @@
+.container_footer {
+  width: 100%;
+  height: 134px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(252, 230, 251);
+}
+
+.box_logo {
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo_img {
+  width: 55px;
+  height: 69px;
+}
+
+.title_text_logo {
+  color: black;
+  width: 238.29px;
+  font-size: 30px;
+  font-weight: 400;
+  font-family: var(--font-getFlowers);
+  color: #333333;
+}

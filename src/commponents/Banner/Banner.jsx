@@ -1,8 +1,8 @@
 import React from "react";
 import Style from "./Banner.module.css";
-import flowerImg from "../../img/flower_img.png";
-import money from "../../img/money_img.png";
-import deliveryCar from "../../img/deliveryCar.png";
+import flowerImg from "../../img/flower_img.svg";
+import money from "../../img/money_img.svg";
+import deliveryCar from "../../img/deliveryCar.svg";
 function Banner() {
   return (
     <div className={Style.banner}>

@@ -1,9 +1,10 @@
-// import { Link } from "react-router-dom";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-router-dom";
+import { Button, animateScroll as scroll } from "react-scroll";
 import Style from "./Header.module.css";
 import logo from "../../img/logo_img.svg";
 import searchInput from "../../img/searchInput.svg";
 import Basket from "../../img/Basket.svg";
+import About from "../About/About";
 // import { useState } from "react";
 // import { useDispatch } from "react-redux";
 // import { searchFlowers } from "../../store/cardSlice";
@@ -22,7 +23,7 @@ export const Header = () => {
     <header className={Style.head}>
       <div className={Style.title}>
         <img className={Style.logo_img} src={logo} alt="Logo" />
-        <div className={Style.title_text}>Get flowers</div>
+        <div className={Style.title_text}>Get Flowers</div>
       </div>
       <div className={Style.nav_menu}>
         <Link className={Style.link} to="/">
@@ -31,7 +32,7 @@ export const Header = () => {
         <Link className={Style.link} to="/Catalog">
           Каталог
         </Link>
-        <Link
+        <Button
           className={Style.link}
           activeClass="active"
           to="Delivery"
@@ -42,8 +43,8 @@ export const Header = () => {
           onClick={scrollToTop}
         >
           Доставка
-        </Link>
-        <Link
+        </Button>
+        <Button
           className={Style.link}
           activeClass="active"
           to="Contacts"
@@ -54,7 +55,7 @@ export const Header = () => {
           onClick={scrollToTop}
         >
           Контакты
-        </Link>
+        </Button>
         <Link className={Style.link} to="/About">
           О нас
         </Link>

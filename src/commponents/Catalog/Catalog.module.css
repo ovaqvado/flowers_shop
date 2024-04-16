@@ -1,0 +1,53 @@
+input[type="range"] {
+  width: 1041.07px;
+  height: 14.25px;
+  -webkit-appearance: none;
+  background: #ffadef;
+  outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 75.71px;
+  height: 76.01px;
+  background: #ffadef;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+span {
+  font-weight: bold;
+}
+.inputPrice {
+  border: 14.22px solid #ffadef;
+  width: 1325px;
+  height: 270px;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+}
+.cardPrice {
+  display: flex;
+  width: 700px;
+  justify-content: space-around;
+}
+.itemCardPrice {
+  width: 331.25px;
+  height: 57px;
+  background: #ffadef;
+  border-radius: 20px;
+}
+legend {
+  padding: 0 20px;
+  font-size: 47.39px;
+  font-family: "Montserrat", sans-serif;
+  color: #333333;
+}
+.textPrice {
+  text-align: center;
+  font-size: 33px;
+  color: #333333;
+}

@@ -11,3 +11,43 @@
 .app {
   background-color: #fceffb;
 }
+/* 
+Header {
+  position: fixed;
+  width: 99%;
+  z-index: 99;
+} */
+
+::-webkit-scrollbar {
+  width: 15px;
+  height: 1px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f8d2f9; /* цвет фона трека */
+}
+
+::-webkit-scrollbar-thumb {
+  background: radial-gradient(
+    262.17% 71.5% at 50% 50%,
+    rgba(249, 116, 231, 0.8016) 28.66%,
+    rgb(255, 56, 228) 42.13%,
+    #ff3ae5 44.83%,
+    rgb(255, 134, 239) 56.25%,
+    rgba(251, 205, 247, 0.1049) 89.51%,
+    rgba(250, 145, 236, 0.4439) 100%,
+    rgba(252, 230, 251, 0) 100%,
+    rgba(251, 172, 241, 0.2722) 100%
+  );
+  /* цвет пальца scrollbar */
+}
+
+::-moz-selection {
+  background: rgb(255, 172, 244);
+}
+::-webkit-selection {
+  background: rgb(255, 172, 244);
+}
+::selection {
+  background: rgb(255, 172, 244);
+}

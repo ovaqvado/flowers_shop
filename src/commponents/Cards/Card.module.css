@@ -8,11 +8,12 @@
   margin: 20px;
   transition: transform 0.3s;
   box-shadow: 10px 10px 10px rgba(255, 170, 234, 0.5);
+
+  &:hover {
+    transform: translateY(-5px);
+  }
 }
 
-.card:hover {
-  transform: translateY(-5px);
-}
 .cards {
   display: flex;
   align-items: center;

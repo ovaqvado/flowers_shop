@@ -1,6 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 /* @import url("https://fonts.googleapis.com/css2?family=Licorice&display=swap"); */
 @import url("https://fonts.googleapis.com/css2?family=Calligraffitti&family=Licorice&display=swap");
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: var(--main-bg-color);
+  color: #fff;
+  height: 122px;
+}
+
 .title {
   display: flex;
   flex-direction: row;
@@ -15,9 +26,10 @@
 }
 
 .title_text {
+  padding-top: 25px;
   color: black;
   width: 238.29px;
-  font-size: 40px;
+  font-size: 60px;
   font-weight: 400;
   font-family: var(--font-getFlowers);
   color: #333333;
@@ -29,24 +41,16 @@
   margin: 0 15px;
   font-family: "Montserrat", sans-serif;
   font-size: 20px;
-  font-weight: 300;
-}
+  font-weight: 500;
+  background: none;
+  border: none;
 
-.link:hover {
-  color: rgb(255, 140, 242);
-  text-shadow: 1px 1px 6px;
-  transition: 0.3s;
-  cursor: pointer;
-}
-
-.head {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-  background-color: var(--main-bg-color);
-  color: #fff;
-  height: 122px;
+  &:hover {
+    color: rgb(255, 140, 242);
+    text-shadow: 1px 1px 6px;
+    transition: 0.3s;
+    cursor: pointer;
+  }
 }
 
 .logo_img {
@@ -63,6 +67,9 @@
   outline: none;
   background: transparent;
   border: none;
+  font-size: 15px;
+  font-weight: 400;
+  color: #333333;
   font-family: "Montserrat", sans-serif;
 }
 .searchDiv {

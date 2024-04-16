@@ -1,5 +1,5 @@
-import { Routes, Route } from 'react-router-dom';
-
+// import { Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import About from './commponents/About/About';
 import Basket from './commponents/Basket/Basket';
 import Catalog from './commponents/Catalog/Catalog';
@@ -10,13 +10,15 @@ import Glavnaya from './commponents/Glavnaya/Glavnaya'
 
 function AppRouter() {
     return (
+
         <Routes>
+
             <Route path="/" element={<Glavnaya />} />
             <Route path='/Catalog' element={<Catalog />} />
             <Route path='/Delivery' element={<Delivery />} />
-            {/* <Route path='/Contacts' element={<Contacts />} /> */}
             <Route path="/About" element={<About />} />
             <Route path="/Basket" element={<Basket />} />
+
         </Routes>
     );
 }

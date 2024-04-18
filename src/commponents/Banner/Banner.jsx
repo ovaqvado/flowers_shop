@@ -18,7 +18,7 @@ function Banner() {
             <br />
             опытными флористами
           </p>
-          <img src={flowerImg} alt="" />
+          <img className={Style.info_img_flower} src={flowerImg} alt="" />
         </div>
         <div className={Style.banner_card}>
           <p className={Style.text_info}>
@@ -26,14 +26,14 @@ function Banner() {
             <br />
             заказ
           </p>
-          <img src={money} alt="" />
+          <img className={Style.info_img_money} src={money} alt="" />
         </div>
-        <div className={Style.banner_card}>
+        <div className={Style.banner_card_car}>
           <p className={Style.text_info}>
             Быстрая достака <br />
             24 часа
           </p>
-          <img className={Style.info_img} src={deliveryCar} alt="" />
+          <img className={Style.info_img_car} src={deliveryCar} alt="" />
         </div>
       </div>
     </div>

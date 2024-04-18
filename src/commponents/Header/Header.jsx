@@ -60,15 +60,15 @@ export const Header = () => {
           О нас
         </Link>
         <img className={Style.basket} src={Basket} alt="Basket" />
-        <div className={Style.searchDiv}>
-          <img className={Style.search_img} src={searchInput} alt="" />
-          <input
-            // value={input}
-            placeholder="Поиск"
-            type="search"
-            className={Style.input}
-            // onInput={search}
-          />
+        <div className={Style.box}>
+          <div className={Style.search_bar}>
+            <input type="text" placeholder="Search..." />
+            <img
+              className={Style.search_input_img}
+              src={searchInput}
+              alt="Search icon"
+            />
+          </div>
         </div>
       </div>
     </header>

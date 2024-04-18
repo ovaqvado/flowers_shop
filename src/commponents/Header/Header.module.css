@@ -18,7 +18,7 @@
   align-items: center;
   justify-content: center;
   gap: 17px;
-  width: 312.43px;
+  width: 350.43px;
   height: 77.43px;
   margin-left: 30.23px;
   margin-top: 22px;
@@ -54,29 +54,54 @@
 }
 
 .logo_img {
-  width: 57.11px;
-  height: 69.99px;
+  width: 72px;
+  height: 65px;
 }
 .nav_menu {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.input {
-  padding: 10px;
-  outline: none;
-  background: transparent;
-  border: none;
-  font-size: 15px;
-  font-weight: 400;
-  color: #333333;
-  font-family: "Montserrat", sans-serif;
+.box {
+  display: flex;
+  justify-content: center;
+  margin: 50px;
 }
+
+.search_bar {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input {
+  flex: 1;
+  height: 30px;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  background: none;
+}
+
+img {
+  width: 20px;
+  height: 20px;
+  margin-left: 5px;
+}
+
+.search_input_img {
+  &:hover {
+    cursor: s-resize;
+  }
+}
+
 .searchDiv {
   width: 225.6px;
   height: 34.49px;
   display: flex;
-  margin-left: 20px;
+  margin-left: 10px;
   border: 1px solid black;
   border-radius: 5px;
   font-size: 16px;

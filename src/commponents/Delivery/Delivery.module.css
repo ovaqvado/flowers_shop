@@ -63,5 +63,10 @@
 .img_payments {
   display: flex;
   padding-top: 30px;
-  gap: 40px;
+  /* padding-bottom: 30px; */
+  gap: 15px;
+}
+.method_payment {
+  width: 125px;
+  height: 40px;
 }

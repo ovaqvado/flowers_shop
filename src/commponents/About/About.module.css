@@ -7,16 +7,15 @@
 .search_bar {
   display: flex;
   align-items: center;
-  /* padding: 5px; */
+  padding: 5px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  width: 200px;
 }
 
 input {
   flex: 1;
   height: 30px;
-  /* padding: 5px; */
+  padding: 5px;
   border: none;
   border-radius: 5px;
 }
@@ -24,8 +23,5 @@ input {
 img {
   width: 20px;
   height: 20px;
-  &:hover {
-    cursor: pointer;
-    transform: rotateY(10);
-  }
+  margin-left: 5px;
 }

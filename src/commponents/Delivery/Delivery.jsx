@@ -41,14 +41,18 @@ function Delivery() {
             карты, или использовать наличные при получении заказа от курьера.
           </p>
           <div className={Style.img_payments}>
-            <img src={visa} alt="visa" />
-            <img src={mastercard} alt="mastercard" />
-            <img src={qiwi} alt="qiwi" />
-            <img src={mir} alt="mir" />
+            <img className={Style.method_payment} src={visa} alt="visa" />
+            <img
+              className={Style.method_payment}
+              src={mastercard}
+              alt="mastercard"
+            />
+            {/* <img className={Style.visa} src={qiwi} alt="qiwi" /> */}
+            <img className={Style.method_payment} src={mir} alt="mir" />
           </div>
         </div>
       </div>
-      <div className={Style.price_delivery}></div>
+      {/* <div className={Style.price_delivery}></div> */}
     </div>
   );
 }

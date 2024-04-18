@@ -24,14 +24,26 @@
   margin-top: 43.51px;
 }
 .banner_info {
-  width: 1350px;
+  width: 1620px;
   display: flex;
   margin-top: 110px;
   margin-left: 130px;
   justify-content: space-between;
 }
 
+.banner_card_car {
+  width: 350px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-right: 106px;
+}
+
 .banner_card {
+  width: 350px;
+  height: 450px;
+  padding-bottom: 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -44,6 +56,18 @@
   color: #333333;
 }
 
-.info_img {
+.info_img_car {
   padding-top: 40px;
+  width: 350px;
+  height: 140px;
+}
+
+.info_img_flower {
+  width: 169px;
+  height: 206px;
+}
+
+.info_img_money {
+  width: 183px;
+  height: 206px;
 }

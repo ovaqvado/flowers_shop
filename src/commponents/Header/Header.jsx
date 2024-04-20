@@ -39,7 +39,7 @@ export const Header = () => {
           spy={true}
           smooth={true}
           offset={-1}
-          duration={500}
+          duration={400}
           onClick={scrollToTop}
         >
           Доставка
@@ -48,7 +48,7 @@ export const Header = () => {
           className={Style.link}
           activeClass="active"
           to="Contacts"
-          spy={true}
+          // spy={true}
           smooth={true}
           offset={-200}
           duration={500}
@@ -62,12 +62,7 @@ export const Header = () => {
         <img className={Style.basket} src={Basket} alt="Basket" />
         <div className={Style.box}>
           <div className={Style.search_bar}>
-            <input type="text" placeholder="Search..." />
-            <img
-              className={Style.search_input_img}
-              src={searchInput}
-              alt="Search icon"
-            />
+            <input type="text" placeholder="Поиск" />
           </div>
         </div>
       </div>

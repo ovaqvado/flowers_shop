@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 
 .banner {
+  padding-top: 100px;
   display: flex;
   align-items: center;
   flex-direction: column;
   background-image: url("../../img/banner.png");
-  height: 961.44px;
 }
 .title_banner {
   height: 67.49px;
@@ -23,31 +23,29 @@
   color: #333333;
   margin-top: 43.51px;
 }
-.banner_info {
-  width: 1620px;
+.cards {
   display: flex;
+  gap: 300px;
   margin-top: 110px;
-  margin-left: 130px;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
-.banner_card_car {
+.car {
   width: 350px;
   height: 450px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-right: 106px;
 }
 
-.banner_card {
+/* .card {
   width: 350px;
   height: 450px;
   padding-bottom: 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
+} */
 
 .text_info {
   font-family: "Inter", sans-serif;
@@ -60,14 +58,16 @@
   padding-top: 40px;
   width: 350px;
   height: 140px;
+  padding-top: 90px;
 }
 
-.info_img_flower {
+/* .info_img_card {
   width: 169px;
   height: 206px;
-}
+} */
 
-.info_img_money {
+.info_img_card {
   width: 183px;
   height: 206px;
+  padding-top: 30px;
 }

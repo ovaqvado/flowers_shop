@@ -50,4 +50,6 @@ legend {
   text-align: center;
   font-size: 33px;
   color: #333333;
+  position: relative;
+  bottom: 28.5px;
 }

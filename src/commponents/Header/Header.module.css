@@ -10,6 +10,10 @@
   background-color: var(--main-bg-color);
   color: #fff;
   height: 122px;
+
+  /* z-index: 99;
+  left: 0;
+  right: 0; */
 }
 
 .title {
@@ -61,57 +65,31 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  border-bottom: 1px solid black;
+  height: 60px;
 }
 .box {
   display: flex;
   justify-content: center;
-  margin: 50px;
-}
-
-.search_bar {
-  display: flex;
-  align-items: center;
-  padding: 5px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  margin-left: 20px;
 }
 
 input {
   flex: 1;
-  height: 30px;
-  padding: 5px;
-  border: none;
-  border-radius: 5px;
-  background: none;
-}
-
-img {
-  width: 20px;
   height: 20px;
-  margin-left: 5px;
-}
-
-.search_input_img {
-  &:hover {
-    cursor: s-resize;
+  /* padding: 5px; */
+  border: 1px solid black;
+  border-radius: 6px;
+  padding: 7px;
+  background: none;
+  font-family: "Montserrat", sans-serif;
+  &:focus {
+    outline: none;
   }
 }
 
-.searchDiv {
-  width: 225.6px;
-  height: 34.49px;
-  display: flex;
-  margin-left: 10px;
-  border: 1px solid black;
-  border-radius: 5px;
-  font-size: 16px;
-  border-radius: 10px;
-  justify-content: center;
-  align-items: center;
-}
-
 .basket {
-  margin-left: 15px;
+  margin-left: 20px;
   cursor: pointer;
   width: 35.15px;
   height: 33px;

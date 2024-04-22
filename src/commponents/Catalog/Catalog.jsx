@@ -1,12 +1,14 @@
 import React from "react";
 import Style from "./Catalog.module.css";
 import { useState } from "react";
-function Catalog() {
-  const [price, setPrice] = useState(50);
 
-  const handleChange = (event) => {
+function Catalog() {
+  const [price, setPrice] = useState(50); // Начальное значение цены
+
+  const handlePriceChange = (event) => {
     setPrice(event.target.value);
   };
+
   return (
     <div>
       <fieldset className={Style.inputPrice}>
@@ -14,11 +16,14 @@ function Catalog() {
         <div>
           <input
             type="range"
+            id="price"
+            name="price"
             min="0"
-            max="5000"
+            max="100" // Устанавливаем максимальное значение диапазона
             value={price}
-            onChange={handleChange}
+            onChange={handlePriceChange}
           />
+          {/* <input type="range" /> */}
         </div>
         <div className={Style.cardPrice}>
           <div className={Style.itemCardPrice}>

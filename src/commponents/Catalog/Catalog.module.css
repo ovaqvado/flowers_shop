@@ -1,9 +1,11 @@
 input[type="range"] {
-  width: 1041.07px;
-  height: 14.25px;
   -webkit-appearance: none;
+  width: 1041.07px;
+  height: 15px;
   background: #ffadef;
+  border-radius: 17.5px;
   outline: none;
+  border: none;
 }
 
 input[type="range"]::-webkit-slider-thumb {
@@ -11,8 +13,8 @@ input[type="range"]::-webkit-slider-thumb {
   width: 75.71px;
   height: 76.01px;
   background: #ffadef;
-  cursor: pointer;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 span {

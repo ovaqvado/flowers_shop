@@ -10,7 +10,7 @@
 }
 
 .title_about {
-  font-family: "Montserrat", sans-serif;
+  /* font-family: "Montserrat", sans-serif; */
   text-align: justify;
   color: #333333;
 }
@@ -23,4 +23,9 @@
 .text_about {
   color: #666666;
   font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+.text_about_h3 {
+  font-family: "Montserrat", sans-serif;
+  color: #666666;
 }

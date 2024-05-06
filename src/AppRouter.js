@@ -5,13 +5,14 @@ import Basket from './commponents/Basket/Basket';
 import Catalog from './commponents/Catalog/Catalog';
 import Delivery from './commponents/Delivery/Delivery';
 import Glavnaya from './commponents/Glavnaya/Glavnaya'
+import Style from "./App.css";
 // import Contacts from './commponents/Contacts/Contacts';
 
 
 function AppRouter() {
     return (
 
-        <Routes>
+        <Routes className={Style.piska}>
 
             <Route path="/" element={<Glavnaya />} />
             <Route path='/Catalog' element={<Catalog />} />

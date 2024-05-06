@@ -36,32 +36,3 @@ function Banner() {
 }
 
 export default Banner;
-
-{
-  /* 
-      <div className={Style.banner_info}>
-        <div className={Style.banner_card}>
-          <p className={Style.text_info}>
-            Букеты собираются
-            <br />
-            опытными флористами
-          </p>
-          <img className={Style.info_img_flower} src={flowerImg} alt="" />
-        </div>
-        <div className={Style.banner_card}>
-          <p className={Style.text_info}>
-            Скидка 7% на первый
-            <br />
-            заказ
-          </p>
-          <img className={Style.info_img_money} src={money} alt="" />
-        </div>
-        <div className={Style.banner_card_car}>
-          <p className={Style.text_info}>
-            Быстрая достака <br />
-            24 часа
-          </p>
-          <img className={Style.info_img_car} src={deliveryCar} alt="" />
-        </div>
-      </div> */
-}

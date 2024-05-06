@@ -5,7 +5,9 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-image: url("../../img/banner.png");
+  background: url("../../img/banner_bg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .title_banner {
   height: 67.49px;

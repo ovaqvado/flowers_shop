@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-/* @import url("https://fonts.googleapis.com/css2?family=Licorice&display=swap"); */
 @import url("https://fonts.googleapis.com/css2?family=Calligraffitti&family=Licorice&display=swap");
 
 .head {
@@ -9,8 +8,7 @@
   padding: 10px;
   background-color: var(--main-bg-color);
   color: #fff;
-  height: 122px;
-  z-index: 99;
+  height: 80px;
 }
 
 .title {
@@ -18,22 +16,25 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 17px;
-  width: 350.43px;
-  height: 77.43px;
-  margin-left: 30.23px;
-  margin-top: 22px;
-  margin-bottom: 31.41px;
+  width: 100px;
+  height: 80px;
+  margin-left: 45px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
-.title_text {
-  padding-top: 25px;
-  color: black;
-  width: 238.29px;
-  font-size: 60px;
-  font-weight: 400;
-  font-family: var(--font-getFlowers);
-  color: #333333;
+.logo_img {
+  width: 90px;
+  height: 110px;
+}
+
+.nav_menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-bottom: 1px solid black;
+  height: 40px;
 }
 
 .link {
@@ -41,30 +42,18 @@
   text-decoration: none;
   margin: 0 15px;
   font-family: "Montserrat", sans-serif;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 500;
   background: none;
   border: none;
-
   &:hover {
-    color: rgb(255, 140, 242);
+    color: #e86795;
     text-shadow: 1px 1px 6px;
     transition: 0.3s;
     cursor: pointer;
   }
 }
 
-.logo_img {
-  width: 72px;
-  height: 65px;
-}
-.nav_menu {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-bottom: 1px solid black;
-  height: 60px;
-}
 .box {
   display: flex;
   justify-content: center;
@@ -72,22 +61,55 @@
 }
 
 input {
-  flex: 1;
-  height: 20px;
-  /* padding: 5px; */
+  height: 15px;
   border: 1px solid black;
-  border-radius: 6px;
+  color: black;
+  border-radius: 5px;
   padding: 7px;
   background: none;
+  margin-top: 5px;
+  margin-left: 20px;
   font-family: "Montserrat", sans-serif;
-  &:focus {
-    outline: none;
+  font-size: 20px;
+  &::placeholder {
+    color: black;
+    font-weight: 500;
   }
 }
 
 .basket {
   margin-left: 20px;
   cursor: pointer;
-  width: 35.15px;
-  height: 33px;
+  width: 40px;
+  height: 35px;
+}
+
+@media (max-width: 1707px) {
+  .nav_menu {
+    padding: 10px;
+  }
+  .head {
+    height: 75px;
+  }
+
+  .logo_img {
+    width: 80px;
+    height: 100px;
+  }
+
+  .link {
+    font-size: 20px;
+    margin-left: 10px;
+  }
+  .basket {
+    margin-left: 10px;
+    cursor: pointer;
+    width: 35px;
+    height: 30px;
+  }
+
+  input {
+    font-size: 15px;
+    margin-left: 10px;
+  }
 }

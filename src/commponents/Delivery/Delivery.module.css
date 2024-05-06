@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-color: #fce6fb;
+  background: url("./images/bg_delivery.svg");
   height: 1080px;
 }
 

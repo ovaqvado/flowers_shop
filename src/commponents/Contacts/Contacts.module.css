@@ -30,11 +30,12 @@
 }
 .main_container {
   position: absolute;
+  margin-left: 100px;
   left: 150px;
   border-radius: 20px;
-  background-color: #fceffb;
-  width: 575px;
-  height: 570px;
+  background-color: #fce6fb;
+  width: 550px;
+  height: 530px;
 }
 
 .pipiska {

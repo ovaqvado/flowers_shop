@@ -1,6 +1,9 @@
 .card {
-  width: 404.92px;
-  height: 395.55px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 350px;
+  /* height: 300px; */
   background-color: #fff;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
@@ -16,7 +19,8 @@
 
 .cards {
   display: flex;
+  height: 1080px;
   align-items: center;
   justify-content: center;
-  background-color: var(--main-bg-color);
+  background: url("../../img/card_bg.svg");
 }

@@ -8,6 +8,7 @@ function Cards(props) {
     <div className={style.card}>
       <h3>{props.item.name}</h3>
       <p>{props.item.price}</p>
+      <img src={props.item.img} />
     </div>
   );
 }

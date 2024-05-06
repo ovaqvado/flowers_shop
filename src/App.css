@@ -11,19 +11,16 @@
   --font-globalFont: "Montserrat";
 }
 
-.app {
-  background-color: #fceffb;
+.piska {
+  background-color: rgb(252, 230, 251);
 }
-/* 
-Header {
-  position: fixed;
-  width: 99%;
-  z-index: 99;
-} */
+
+.app {
+  background-color: rgb(251, 165, 247);
+}
 
 ::-webkit-scrollbar {
-  width: 15px;
-  height: 1px;
+  width: 20px;
 }
 
 ::-webkit-scrollbar-track {
@@ -31,17 +28,13 @@ Header {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: radial-gradient(
-    262.17% 71.5% at 50% 50%,
-    rgba(249, 116, 231, 0.8016) 28.66%,
-    rgb(255, 56, 228) 42.13%,
-    #ff3ae5 44.83%,
-    rgb(255, 134, 239) 56.25%,
-    rgba(251, 205, 247, 0.1049) 89.51%,
-    rgba(250, 145, 236, 0.4439) 100%,
-    rgba(252, 230, 251, 0) 100%,
-    rgba(251, 172, 241, 0.2722) 100%
+  background: linear-gradient(
+    180deg,
+    #e86b9e 0.5%,
+    #fce6fb 52.5%,
+    #e86b9e 100%
   );
+
   /* цвет пальца scrollbar */
 }
 

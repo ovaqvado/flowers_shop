@@ -5,21 +5,19 @@ const cardSlice = createSlice({
     flower: [
       {
         name: "Роза",
+        img: "https://imgs.su/upload/188/2129640775.png",
         price: 150,
         id: 0,
       },
       {
         name: "Ромашка",
+        img: "https://mykaleidoscope.ru/uploads/posts/2023-09/1696005696_mykaleidoscope-ru-p-buketi-iz-romashek-pinterest-62.jpg",
         price: 100,
         id: 1,
       },
       {
         name: "Тюльпан",
-        price: 80,
-        id: 2,
-      },
-      {
-        name: "Тюльпан",
+        img: "https://binomen.ru/photo/uploads/posts/2024-02/1707219652_binomen-ru-p-buket-tyulpanov-vkontakte-83.jpg",
         price: 80,
         id: 2,
       },

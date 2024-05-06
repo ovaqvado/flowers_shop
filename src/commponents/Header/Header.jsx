@@ -2,20 +2,9 @@ import { Link } from "react-router-dom";
 import { Button, animateScroll as scroll } from "react-scroll";
 import Style from "./Header.module.css";
 import logo from "../../img/logo_img.svg";
-import searchInput from "../../img/searchInput.svg";
 import Basket from "../../img/Basket.svg";
 import About from "../About/About";
-// import { useState } from "react";
-// import { useDispatch } from "react-redux";
-// import { searchFlowers } from "../../store/cardSlice";
 export const Header = () => {
-  // const [input, setInput] = useState("");
-  // const dispatch = useDispatch();
-  // function search(e) {
-  //   setInput(e.target.value);
-  //   dispatch(searchFlowers(e.target.value));
-
-  // }
   const scrollToTop = () => {
     scroll.scrollToTop();
   };
@@ -23,7 +12,6 @@ export const Header = () => {
     <header className={Style.head}>
       <div className={Style.title}>
         <img className={Style.logo_img} src={logo} alt="Logo" />
-        <div className={Style.title_text}>Get Flowers</div>
       </div>
       <div className={Style.nav_menu}>
         <Link className={Style.link} to="/">
@@ -48,7 +36,7 @@ export const Header = () => {
           className={Style.link}
           activeClass="active"
           to="Contacts"
-          // spy={true}
+          spy={true}
           smooth={true}
           offset={-200}
           duration={500}
@@ -69,11 +57,3 @@ export const Header = () => {
     </header>
   );
 };
-
-{
-  /* <div className={Style.basket}>
-          <Link className={Style.link} to="/Basket">
-            Корзина
-          </Link>
-        </div> */
-}

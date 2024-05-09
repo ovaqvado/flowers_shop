@@ -17,10 +17,16 @@
   }
 }
 
+.cards_container {
+  display: flex;
+  align-items: center;
+  height: 830px;
+  flex-direction: column;
+  justify-content: center;
+  background: url("../../img/cards_bg.svg");
+}
+
 .cards {
   display: flex;
-  height: 1080px;
-  align-items: center;
-  justify-content: center;
-  background: url("../../img/card_bg.svg");
+  flex-direction: row;
 }

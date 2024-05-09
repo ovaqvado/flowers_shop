@@ -11,12 +11,8 @@
   --font-globalFont: "Montserrat";
 }
 
-.piska {
-  background-color: rgb(252, 230, 251);
-}
-
 .app {
-  background-color: rgb(251, 165, 247);
+  background-color: #ffffff;
 }
 
 ::-webkit-scrollbar {

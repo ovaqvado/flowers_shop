@@ -2,7 +2,6 @@ import Cards from "./Cards";
 import React from "react";
 import { useSelector } from "react-redux";
 import Style from "./Card.module.css";
-import { Splide, SplideSlide } from "@splidejs/react-splide";
 function CardList() {
   const flowers = useSelector((store) => store.cardSlice.flower);
   return (

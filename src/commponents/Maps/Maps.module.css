@@ -6,13 +6,9 @@
 }
 
 .GoogleMap {
-  width: 1568px;
+  width: 1500px;
   height: 850px;
   margin-top: 45px;
   margin-bottom: 45px;
   border-radius: 125px;
-}
-
-.Contacts {
-  margin-left: 50px;
 }

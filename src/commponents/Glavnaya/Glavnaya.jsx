@@ -8,9 +8,9 @@ import Delivery from "../Delivery/Delivery";
 function Glavnaya() {
   return (
     <div className={Style.cardMain}>
-      <Banner />
-      <CardList />
-      <Delivery />
+      <Banner className={Style.banner_container} />
+      <CardList className={Style.card_container} />
+      <Delivery className={Style.delivery_container} />
       <GoogleMap />
     </div>
   );

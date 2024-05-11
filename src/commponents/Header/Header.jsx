@@ -10,9 +10,9 @@ export const Header = () => {
   };
   return (
     <header className={Style.head}>
-      <div className={Style.title}>
+      <Link to="/" className={Style.title}>
         <img className={Style.logo_img} src={logo} alt="Logo" />
-      </div>
+      </Link>
       <div className={Style.nav_menu}>
         <Link className={Style.link} to="/">
           Главная

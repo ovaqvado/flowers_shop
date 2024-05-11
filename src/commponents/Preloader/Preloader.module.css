@@ -1,0 +1,10 @@
+.preLoader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pre_img {
+  width: 500px;
+  height: 500px;
+}

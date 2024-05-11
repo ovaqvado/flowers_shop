@@ -12,7 +12,7 @@ import Style from "./App.css";
 function AppRouter() {
     return (
 
-        <Routes className={Style.piska}>
+        <Routes className={Style.app}>
 
             <Route path="/" element={<Glavnaya />} />
             <Route path='/Catalog' element={<Catalog />} />

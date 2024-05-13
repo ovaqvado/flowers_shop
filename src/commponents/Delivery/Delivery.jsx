@@ -8,10 +8,10 @@ import Style from "./Delivery.module.css";
 
 function Delivery() {
   return (
-    <div className={Style.delivery_container}>
+    <div id="Delivery" className={Style.delivery_container}>
       <h1 className={Style.title_delivery}>Доставка и оплата</h1>
       <div className={Style.cards_info}>
-        <div className={Style.card_delivery}>
+        <div  className={Style.card_delivery}>
           <img src={car} alt="car" />
           <h3 className={Style.subtitle}>Условия доставки</h3>
           <p className={Style.text_info}>

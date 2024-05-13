@@ -30,6 +30,7 @@ span {
   align-items: center;
   justify-content: center;
   gap: 60px;
+  
 }
 .cardPrice {
   display: flex;
@@ -54,4 +55,9 @@ legend {
   color: #333333;
   position: relative;
   bottom: 28.5px;
+}
+.catalog_Price{
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
 }

@@ -10,7 +10,7 @@ function Catalog() {
   };
 
   return (
-    <div>
+    <div className={Style.catalog_Price}>
       <fieldset className={Style.inputPrice}>
         <legend>Подобрать по цене</legend>
         <div>

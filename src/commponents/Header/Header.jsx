@@ -1,13 +1,20 @@
 import { Link } from "react-router-dom";
-import { Button, animateScroll as scroll } from "react-scroll";
+
 import Style from "./Header.module.css";
 import logo from "../../img/logo_img.svg";
 import Basket from "../../img/Basket.svg";
 import About from "../About/About";
 export const Header = () => {
-  const scrollToTop = () => {
-    scroll.scrollToTop();
+  const smoothScrollToAnchor = (anchor) => {
+    const target = document.querySelector(anchor);
+    if (target) {
+      window.scrollTo({
+        top: target.offsetTop - 80,
+        behavior: "smooth",
+      });
+    }
   };
+  
   return (
     <header className={Style.head}>
       <Link to="/" className={Style.title}>
@@ -20,30 +27,20 @@ export const Header = () => {
         <Link className={Style.link} to="/Catalog">
           Каталог
         </Link>
-        <Button
+        <Link
+          onClick={() => smoothScrollToAnchor("#Delivery")}
+          to="/#Delivery"
           className={Style.link}
-          activeClass="active"
-          to="Delivery"
-          spy={true}
-          smooth={true}
-          offset={-1}
-          duration={400}
-          onClick={scrollToTop}
         >
           Доставка
-        </Button>
-        <Button
+        </Link>
+        <Link
+          onClick={() => smoothScrollToAnchor("#Contacts")}
+          to="/#Contacts"
           className={Style.link}
-          activeClass="active"
-          to="Contacts"
-          spy={true}
-          smooth={true}
-          offset={-200}
-          duration={500}
-          onClick={scrollToTop}
         >
           Контакты
-        </Button>
+        </Link>
         <Link className={Style.link} to="/About">
           О нас
         </Link>

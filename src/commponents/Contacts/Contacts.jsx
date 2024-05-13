@@ -6,7 +6,8 @@ import markLocation from "./image/markLocation.svg";
 
 function Contacts() {
   return (
-    <div id="Contacts" className={Style.main_container}>
+    
+    <div   className={Style.main_container}>
       <h1 className={Style.title_contact}>Контакты</h1>
       <div className={Style.container_card}>
         <div className={Style.contact}>

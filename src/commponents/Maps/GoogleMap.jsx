@@ -3,7 +3,7 @@ import Style from "./Maps.module.css";
 import Contacts from "../Contacts/Contacts";
 function GoogleMap() {
   return (
-    <div className={Style.container_map}>
+    <div id="Contacts" className={Style.container_map}>
       <Contacts className={Style.Contacts} />
       <iframe
         className={Style.GoogleMap}

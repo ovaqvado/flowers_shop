@@ -16,7 +16,7 @@ function AppRouter() {
 
             <Route path="/" element={<Glavnaya />} />
             <Route path='/Catalog' element={<Catalog />} />
-            <Route path='/Delivery' element={<Delivery />} />
+            <Route  path='/Delivery' element={<Delivery />} />
             <Route path="/About" element={<About />} />
             <Route path="/Basket" element={<Basket />} />
 

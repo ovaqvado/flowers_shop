@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 .title_contact {
-  font-family: Inter;
+  font-family: "Montserrat", sans-serif;
   font-size: 70px;
   font-weight: 500;
   text-align: left;
@@ -11,7 +11,7 @@
 }
 
 .text {
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
   font-size: 20px;
   font-weight: 400;
   text-align: left;
@@ -38,7 +38,46 @@
   height: 530px;
 }
 
-.pipiska {
+.img {
   width: 50px;
   height: 50px;
+}
+
+@media (max-width: 1800px) {
+  .title_contact {
+    font-size: 50px;
+    text-align: left;
+    padding-left: 50px;
+    padding-top: 20px;
+  }
+
+  .text {
+    font-size: 17px;
+    font-weight: 400;
+    text-align: left;
+    margin-left: 20px;
+    color: #666666;
+  }
+  .contact {
+    display: flex;
+    margin-left: 40px;
+    margin-bottom: 40px;
+  }
+
+  .mark_location {
+    width: 37px;
+    height: 47px;
+  }
+  .main_container {
+    margin-left: 90px;
+    border-radius: 20px;
+    background-color: #fce6fb;
+    width: 450px;
+    height: 430px;
+  }
+
+  .img {
+    width: 40px;
+    height: 40px;
+  }
 }

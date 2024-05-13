@@ -13,7 +13,6 @@
   display: flex;
   text-align: left;
   flex-direction: column;
-  z-index: 99;
 }
 
 .title {
@@ -32,4 +31,18 @@
 .img_banner {
   width: 800px;
   height: 500px;
+}
+
+@media (max-width: 1800px) {
+  .banner_container {
+    height: 850px;
+  }
+
+  .title {
+    font-size: 75px;
+  }
+
+  .sub_title {
+    font-size: 25px;
+  }
 }

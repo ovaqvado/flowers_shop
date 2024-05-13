@@ -69,3 +69,69 @@ img {
   width: 125px;
   height: 40px;
 }
+
+@media (max-width: 1800px) {
+  .delivery_container {
+    background-size: 1750px;
+    height: 830px;
+    margin-bottom: 60px;
+  }
+
+  .title_delivery {
+    font-size: 60px;
+  }
+
+  .cards_info {
+    justify-content: space-evenly;
+    /* display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: row;
+    height: 390px;
+    
+    gap: 10px; */
+    /* margin-top: 10px; */
+  }
+
+  .card_delivery {
+    width: 498px;
+    height: 390px;
+  }
+
+  .card_pay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 463px;
+    height: 390px;
+    line-height: 30px;
+  }
+
+  img {
+    width: 202px;
+    height: 193px;
+  }
+
+  .subtitle {
+    font-size: 25px;
+    font-family: var(--font-globalFont);
+    font-weight: 500;
+  }
+
+  .text_info {
+    font-family: var(--font-globalFont);
+    font-size: 19px;
+  }
+
+  .payments {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+  }
+
+  .bank_cards {
+    width: 105px;
+    height: 30px;
+  }
+}

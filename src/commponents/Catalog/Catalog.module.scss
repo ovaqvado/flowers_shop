@@ -1,0 +1,102 @@
+
+
+$primary-color: #ffadef;
+
+
+
+
+
+
+
+// input[type="range"] {
+//   -webkit-appearance: none;
+//   width: 1041.07px;
+//   height: 15px;
+//   background: $primary-color;
+//   border-radius: 17.5px;
+//   outline: none;
+//   border: none;
+// }
+
+// input[type="range"]::-webkit-slider-thumb {
+//   -webkit-appearance: none ;
+//   width: 75.71px;
+//   height: 76.01px;
+//   background: $primary-color;
+//   border-radius: 50%;
+//   cursor: pointer;
+// }
+
+
+// .box_slider_price {
+  
+//   width: 1041.07px;
+//   height: 15px;
+//   background: $primary-color;
+//   border-radius: 17.5px;
+//   outline: none;
+//   border: none;
+// }
+
+// .slider_price {
+//   width: 75.71px;
+//   height: 76.01px;
+//   background: $primary-color;
+//   border-radius: 50%;
+//   cursor: pointer;
+// }
+.slider_price{
+  padding-top: 30px;
+}
+
+span {
+  font-weight: bold;
+}
+.Block_Price {
+  border: 14.22px solid $primary-color;
+  width: 1325px;
+  height: 270px;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  
+}
+.cardPrice {
+  display: flex;
+  width: 700px;
+  justify-content: space-around;
+}
+.itemCardPrice {
+  width: 331.25px;
+  height: 57px;
+  background: #ffadef;
+  border-radius: 20px;
+}
+legend {
+  padding: 0 20px;
+  font-size: 47.39px;
+  font-family: "Montserrat", sans-serif;
+  color: #333333;
+}
+.textPrice {
+  text-align: center;
+  font-size: 33px;
+  color: #333333;
+  position: relative;
+  bottom: 28.5px;
+}
+.catalog_Price{
+  padding-top: 100px;
+  display: flex;
+  align-items: center;
+  
+  flex-direction: column;
+  
+}
+
+.cardList{
+  width: 1920px;
+}

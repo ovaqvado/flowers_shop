@@ -3,7 +3,7 @@ import Style from "./Banner.module.css";
 import banner_img from "../../img/banner_img.svg";
 function Banner() {
   return (
-    <div className={Style.banner_container}>
+    <div id="Banner" className={Style.banner_container}>
       <div className={Style.text}>
         <h1 className={Style.title}>
           Быстрая доставка <br />

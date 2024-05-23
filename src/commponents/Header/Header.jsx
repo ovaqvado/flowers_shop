@@ -18,10 +18,10 @@ export const Header = () => {
   return (
     <header className={Style.head}>
       <Link to="/" className={Style.title}>
-        <img className={Style.logo_img} src={logo} alt="Logo" />
+        <img onClick={() => smoothScrollToAnchor("#Banner")} to="/#Banner" className={Style.logo_img} src={logo} alt="Logo" />
       </Link>
       <div className={Style.nav_menu}>
-        <Link className={Style.link} to="/">
+        <Link onClick={() => smoothScrollToAnchor("#Banner")} className={Style.link} to="/#Banner">
           Главная
         </Link>
         <Link className={Style.link} to="/Catalog">

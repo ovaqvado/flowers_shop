@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-import Style from "./Header.module.css";
+import Style from "./Header.module.scss";
 import logo from "../../img/logo_img.svg";
 import Basket from "../../img/Basket.svg";
 import About from "../About/About";
@@ -21,9 +21,9 @@ export const Header = () => {
         <img onClick={() => smoothScrollToAnchor("#Banner")} to="/#Banner" className={Style.logo_img} src={logo} alt="Logo" />
       </Link>
       <div className={Style.nav_menu}>
-        <Link onClick={() => smoothScrollToAnchor("#Banner")} className={Style.link} to="/#Banner">
+        {/* <Link onClick={() => smoothScrollToAnchor("#Banner")} className={Style.link} to="/#Banner">
           Главная
-        </Link>
+        </Link> */}
         <Link className={Style.link} to="/Catalog">
           Каталог
         </Link>

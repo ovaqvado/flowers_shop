@@ -1,18 +1,46 @@
+// .delivery_container {
+//   display: flex;
+//   align-items: center;
+//   flex-direction: column;
+//   background: url("./images/bg_delivery.svg");
+//   height: 1080px;
+ 
+// }
 .delivery_container {
   display: flex;
   align-items: center;
   flex-direction: column;
   background: url("./images/bg_delivery.svg");
   height: 1080px;
- 
-}
 
+  @media screen and (max-width: 768px) {
+    height: auto;
+  }
+}
+// .title_delivery {
+//   font-family: var(--font-globalFont);
+//   font-size: 70px;
+//   font-weight: 400;
+// }
 .title_delivery {
   font-family: var(--font-globalFont);
   font-size: 70px;
   font-weight: 400;
-}
 
+  @media screen and (max-width: 768px) {
+    font-size: 40px;
+  }
+}
+// .cards_info {
+//   display: flex;
+//   width: 100%;
+//   align-items: center;
+//   flex-direction: row;
+//   height: 390px;
+//   justify-content: space-around;
+//   gap: 10px;
+//   /* margin-top: 10px; */
+// }
 .cards_info {
   display: flex;
   width: 100%;
@@ -21,9 +49,12 @@
   height: 390px;
   justify-content: space-around;
   gap: 10px;
-  /* margin-top: 10px; */
-}
 
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    height: auto;
+  }
+}
 .card_delivery {
   display: flex;
   flex-direction: column;
@@ -32,6 +63,11 @@
   width: 598px;
   height: 390px;
   line-height: 30px;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    height: auto;
+  }
+
 }
 
 .card_pay {

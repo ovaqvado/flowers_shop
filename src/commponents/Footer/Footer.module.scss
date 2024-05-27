@@ -1,45 +1,107 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap");
 
-.container_footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #333333;
-}
+// .container_footer {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   background-color: #333333;
+// }
 
-.footer_box {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  width: 1770px;
-  margin-top: 30px;
-}
+// .footer_box {
+//   display: flex;
+//   flex-direction: row;
+//   align-items: center;
+//   justify-content: space-between;
+//   width: 1770px;
+//   margin-top: 30px;
+// }
 
-.logo_social {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
+// .logo_social {
+//   display: flex;
+//   justify-content: center;
+//   flex-direction: column;
+// }
 
-.logo_footer {
-  width: 200px;
-  height: 160px;
-}
+// .logo_footer {
+//   width: 200px;
+//   height: 160px;
+// }
 
-.group_links {
-  display: flex;
-  flex-direction: row;
-  gap: 15px;
-  margin-top: 35px;
-  margin-bottom: 35px;
-}
+// .group_links {
+//   display: flex;
+//   flex-direction: row;
+//   gap: 15px;
+//   margin-top: 35px;
+//   margin-bottom: 35px;
+// }
+.container_footer { 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  background-color: #333333; 
+} 
 
+.footer_box { 
+  display: flex; 
+  flex-direction: row; 
+  align-items: center; 
+  justify-content: space-between; 
+  width: 100%; // Change width to be 100%
+  max-width: 1770px; // Set max-width for larger screens
+  margin-top: 30px; 
+} 
+
+.logo_footer { 
+  width: 100%; // Make the logo responsive
+  max-width: 200px; // Set max-width for larger screens
+  height: auto; // Allow height to adjust proportionally
+} 
+
+.group_links { 
+  display: flex; 
+  flex-direction: row; 
+  gap: 15px; 
+  margin-top: 25px; // Adjust margin for smaller screens
+  margin-bottom: 25px; // Adjust margin for smaller screens
+} 
+
+.soc_links { 
+  height: 40px; // Make social links smaller for smaller screens
+  width: 40px; // Make social links smaller for smaller screens
+  transition: 0.6s; 
+  &:hover { 
+    transform: scale(1.5); 
+  } 
+} 
+
+@media screen and (max-width: 768px) {
+  .footer_box {
+    flex-direction: column; // Change direction to stack items vertically on small screens
+    padding: 10px; // Add padding for better spacing
+  }
+
+  .logo_footer {
+    width: 150px; // Adjust logo size for smaller screens
+  }
+
+  .group_links {
+    // flex-direction: column; // Stack links vertically on smaller screens
+    gap: 10px; // Adjust gap between links
+    margin-top: 15px; 
+    margin-bottom: 15px; 
+  }
+
+  .soc_links {
+    height: 30px; // Make social links smaller for smaller screens
+    width: 30px; // Make social links smaller for smaller screens
+  }
+}
 .soc_links {
   height: 50px;
   width: 50px;
   transition: 0.6s;
+  
   &:hover {
     transform: scale(1.5);
   }

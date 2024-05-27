@@ -4,7 +4,7 @@ import terminal from "./images/terminal.svg";
 import mastercard from "./images/mastercard.svg";
 import visa from "./images/visa.svg";
 import mir from "./images/mir.svg";
-import Style from "./Delivery.module.css";
+import Style from "./Delivery.module.scss";
 
 function Delivery() {
   return (

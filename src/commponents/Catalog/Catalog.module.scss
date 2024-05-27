@@ -45,13 +45,69 @@ $primary-color: #ffadef;
 //   border-radius: 50%;
 //   cursor: pointer;
 // }
-.slider_price{
+// .slider_price{
+//   padding-top: 30px;
+// }
+
+// span {
+//   font-weight: bold;
+// }
+// .Block_Price {
+//   border: 14.22px solid $primary-color;
+//   width: 1325px;
+//   height: 270px;
+//   border-radius: 50px;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   justify-content: center;
+//   gap: 60px;
+  
+// }
+// .cardPrice {
+//   display: flex;
+//   width: 700px;
+//   justify-content: space-around;
+// }
+// .itemCardPrice {
+//   width: 331.25px;
+//   height: 57px;
+//   background: #ffadef;
+//   border-radius: 20px;
+// }
+// legend {
+//   padding: 0 20px;
+//   font-size: 47.39px;
+//   font-family: "Montserrat", sans-serif;
+//   color: #333333;
+// }
+// .textPrice {
+//   text-align: center;
+//   font-size: 33px;
+//   color: #333333;
+//   position: relative;
+//   bottom: 28.5px;
+// }
+// .catalog_Price{
+//   padding-top: 100px;
+//   display: flex;
+//   align-items: center;
+  
+//   flex-direction: column;
+  
+// }
+
+// .cardList{
+//   width: 1920px;
+// }
+.slider_price {
   padding-top: 30px;
 }
 
 span {
   font-weight: bold;
 }
+
 .Block_Price {
   border: 14.22px solid $primary-color;
   width: 1325px;
@@ -62,25 +118,41 @@ span {
   align-items: center;
   justify-content: center;
   gap: 60px;
-  
+
+  @media screen and (max-width: 1400px) {
+    width: 100%;
+  }
 }
+
 .cardPrice {
   display: flex;
   width: 700px;
   justify-content: space-around;
+
+  @media screen and (max-width: 1000px) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
+
 .itemCardPrice {
   width: 331.25px;
   height: 57px;
   background: #ffadef;
   border-radius: 20px;
+
+  @media screen and (max-width: 750px) {
+    width: 100%;
+  }
 }
+
 legend {
   padding: 0 20px;
   font-size: 47.39px;
   font-family: "Montserrat", sans-serif;
   color: #333333;
 }
+
 .textPrice {
   text-align: center;
   font-size: 33px;
@@ -88,15 +160,22 @@ legend {
   position: relative;
   bottom: 28.5px;
 }
-.catalog_Price{
+
+.catalog_Price {
   padding-top: 100px;
   display: flex;
   align-items: center;
-  
   flex-direction: column;
-  
+
+  @media screen and (max-width: 768px) {
+    padding-top: 50px;
+  }
 }
 
-.cardList{
+.cardList {
   width: 1920px;
+
+  @media screen and (max-width: 1920px) {
+    width: 100%;
+  }
 }

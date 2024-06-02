@@ -1,22 +1,17 @@
-@font-face {
-  font-family: "Flowers Regular";
-  src: url(fonts/flowers.woff);
-}
-
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-
-:root {
-  --main-bg-color: rgb(252, 230, 251);
-  --font-getFlowers: "Flowers Regular";
-  --font-globalFont: "Montserrat";
-}
+// :root {
+//   --main-bg-color: rgb(252, 230, 251);
+// }
 
 .app {
   background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
 }
 
 ::-webkit-scrollbar {
-  width: 20px;
+  width: 10px;
 }
 
 ::-webkit-scrollbar-track {

@@ -3,6 +3,8 @@
   align-items: center;
   justify-content: center;
   background: url("../../img/bg_maps.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .GoogleMap {
@@ -15,16 +17,23 @@
 
 @media (max-width: 1800px) {
   .container_map {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: url("../../img/bg_maps.svg");
-    background-size: 1750px;
   }
 
   .GoogleMap {
     width: 1300px;
     height: 750px;
+    margin-top: 55px;
+    border-radius: 105px;
+  }
+}
+@media (max-width: 1600px) {
+  .container_map {
+    height: 800px;
+  }
+
+  .GoogleMap {
+    width: 1100px;
+    height: 550px;
     margin-top: 55px;
     border-radius: 105px;
   }

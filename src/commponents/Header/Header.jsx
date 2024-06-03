@@ -13,8 +13,14 @@ export const Header = () => {
         behavior: "smooth",
       });
     }
+    
+    
   };
+  const pathname = window.location.pathname;
   
+  if (pathname === '/About') {
+    return <Link to="/Delivery" />;
+  }
   return (
     <header className={Style.head}>
       <Link to="/" className={Style.title}>
@@ -30,10 +36,14 @@ export const Header = () => {
         <Link
           onClick={() => smoothScrollToAnchor("#Delivery")}
           to="/#Delivery"
+          
           className={Style.link}
         >
           Доставка
         </Link>
+      
+          
+        
         <Link
           onClick={() => smoothScrollToAnchor("#Contacts")}
           to="/#Contacts"

@@ -28,8 +28,11 @@
   position: relative;
   z-index: 10;
   @media screen and (max-width: 768px) {
-    width: 300px;
+    
     height: auto;
+    justify-content: center;
+    
+    width: auto;
   }
 }
     
@@ -37,6 +40,12 @@
 .cards {
   display: flex;
   flex-direction: row;
+  @media screen and (max-width: 768px) {
+    width: auto;
+   
+    flex-direction: column;
+  }
+
 }
 // .card {
 //   display: flex;

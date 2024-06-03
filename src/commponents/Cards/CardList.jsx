@@ -8,7 +8,7 @@ function CardList() {
     <>
       <div className={Style.cards_container}>
         <p className={Style.category}>Популярные букеты</p>
-        <div className={Style.cards}>
+        <div className={Style.cards} >
           {flowers.map((item) => (
             <Cards item={item}></Cards>
           ))}

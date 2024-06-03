@@ -1,7 +1,8 @@
 import React from "react";
 import Style from "./About.module.css";
-
+import { Link } from "react-router-dom";
 const About = () => {
+  
   return (
     <div className={Style.box}>
       <h2 className={Style.title_about}>

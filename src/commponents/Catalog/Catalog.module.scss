@@ -173,9 +173,10 @@ legend {
 }
 
 .cardList {
-  width: 1920px;
+  width: 100%;
 
-  @media screen and (max-width: 1920px) {
+  @media screen and (max-width: 768px) {
     width: 100%;
+    flex-direction: column;
   }
 }

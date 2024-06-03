@@ -1,4 +1,4 @@
-/* body {
+body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
@@ -11,16 +11,15 @@
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
-} */
+}
 
-body {
+/* body {
   margin: 0;
   font-family: "Anonymous Pro", serif;
   font-size: 26px;
-  max-width: 1728px;
+  max-width: 1920px;
   min-width: 365px;
-  border-right: 4px solid black;
-  border-left: 4px solid black;
+  
   margin: 0 auto;
 }
 
@@ -41,4 +40,4 @@ p {
   margin: 0;
   padding: 0;
   list-style: none;
-}
+} */

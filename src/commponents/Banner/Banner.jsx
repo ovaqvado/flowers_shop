@@ -1,5 +1,5 @@
 import React from "react";
-import Style from "./Banner.module.css";
+import Style from "./Banner.module.scss";
 import banner_img from "../../img/banner_img.svg";
 function Banner() {
   return (
@@ -19,7 +19,7 @@ function Banner() {
           <br /> по городу от 3000р
         </p>
       </div>
-      <img className={Style.img_banner} src={banner_img} alt="" />
+      <img className={Style.img_banner} src={banner_img} alt="banner_img" />
     </div>
   );
 }

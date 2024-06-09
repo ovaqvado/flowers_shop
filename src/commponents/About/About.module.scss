@@ -1,0 +1,105 @@
+@import "../../styles/_variables.scss";
+
+// block info
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: url("../../img/background_about.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: 100px;
+}
+
+.service {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 50px;
+  width: 1400px;
+  align-items: center;
+  text-align: left;
+}
+
+.title {
+  font-family: $font_Montserrat;
+  font-size: 35px;
+  font-weight: 450;
+  color: $color_primary;
+}
+
+.subtitle {
+  font-family: $font_Montserrat;
+  font-size: 30px;
+  font-weight: 450;
+  color: $color_primary;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.text_info {
+  font-size: 25px;
+  font-weight: 400;
+  color: $color_secondary;
+}
+
+.container_text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  list-style: url("../../img/flower_red_list.svg");
+  list-style-position: inside;
+}
+
+// reviews
+.box_reviews {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 40px;
+  margin: 60px;
+  padding: 100px;
+  border: 1px solid $color_primary;
+  border-radius: 20px;
+}
+
+.reviews {
+  width: 560px;
+  height: 650px;
+  overflow: hidden;
+  position: relative;
+}
+
+.link_reviews {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #e6e6e6;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.site_reviews {
+  box-sizing: border-box;
+  text-decoration: none;
+  color: #b3b3b3;
+  font-size: 10px;
+  font-family: YS Text, sans-serif;
+  padding: 0 20px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  left: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+  max-height: 14px;
+  white-space: nowrap;
+  padding: 0 16px;
+  box-sizing: border-box;
+}
+
+.google_reviews {
+  height: 500px;
+}

@@ -1,14 +1,14 @@
-import React from "react";
+import React, { useRef } from "react";
 import car from "./images/car.svg";
 import terminal from "./images/terminal.svg";
 import mastercard from "./images/mastercard.svg";
 import visa from "./images/visa.svg";
 import mir from "./images/mir.svg";
-import Style from "./Delivery.module.css";
+import Style from "./Delivery.module.scss";
 
 function Delivery() {
   return (
-    <div className={Style.delivery_container}>
+    <div id="section1" className={Style.delivery_container}>
       <h1 className={Style.title_delivery}>Доставка и оплата</h1>
       <div className={Style.cards_info}>
         <div className={Style.card_delivery}>

@@ -24,7 +24,11 @@
   flex-direction: column;
   justify-content: center;
   background: url("../../img/cards_bg.svg");
+  background-size: contain;
   background-repeat: no-repeat;
+  left: 0;
+  right: 0;
+
   position: relative;
   z-index: 10;
 }
@@ -32,4 +36,16 @@
 .cards {
   display: flex;
   flex-direction: row;
+  width: auto;
+}
+
+@media only screen and (max-width: 1440px) {
+  .card {
+    width: 250px;
+  }
+
+  .cards_container {
+    height: 750px;
+    background-size: 1530px;
+  }
 }

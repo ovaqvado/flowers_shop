@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import React from "react";
-import Style from "./Footer.module.css";
+import Style from "./Footer.module.scss";
 import telegram from "./image/telegram.svg";
 import instagram from "./image/instagram.svg";
 import vk from "./image/vk.svg";

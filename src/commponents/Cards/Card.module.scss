@@ -15,6 +15,7 @@
   &:hover {
     transform: translateY(-5px);
   }
+  gap: 15px;
 }
 
 .cards_container {
@@ -27,26 +28,28 @@
   background-repeat: no-repeat;
   position: relative;
   z-index: 10;
-  @media screen and (max-width: 768px) {
-    
-    height: auto;
-    justify-content: center;
-    
-    width: auto;
-  }
+  
 }
     
 
 .cards {
   display: flex;
   flex-direction: row;
-  @media screen and (max-width: 768px) {
-    width: auto;
-   
-    flex-direction: column;
-  }
+ }
 
-}
+ .add_Flower{
+  border: none;
+  background-color: #ffadef;
+  border-radius: 25px;
+  &:hover {
+    color: #e86795;
+    text-shadow: 1px 1px 6px;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+ }
+
+
 // .card {
 //   display: flex;
 //   flex-direction: column;

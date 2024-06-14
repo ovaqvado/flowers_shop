@@ -16,11 +16,7 @@ export const Header = () => {
     
     
   };
-  const pathname = window.location.pathname;
   
-  if (pathname === '/About') {
-    return <Link to="/Delivery" />;
-  }
   return (
     <header className={Style.head}>
       <Link to="/" className={Style.title}>
@@ -54,7 +50,10 @@ export const Header = () => {
         <Link className={Style.link} to="/About">
           О нас
         </Link>
-        <img className={Style.basket} src={Basket} alt="Basket" />
+        <Link to="/Basket">
+        <img  className={Style.basket} src={Basket} alt="Basket" />
+        </Link>
+        
         <div className={Style.box}>
           <div className={Style.search_bar}>
             <input type="text" placeholder="Поиск" />

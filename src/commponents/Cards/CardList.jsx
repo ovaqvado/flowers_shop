@@ -11,9 +11,13 @@ function CardList() {
         <div className={Style.cards} >
           {flowers.map((item) => (
             <Cards item={item}></Cards>
+            
           ))}
+          
         </div>
+        
       </div>
+      
     </>
   );
 }

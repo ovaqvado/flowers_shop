@@ -17,9 +17,6 @@ input[type="range"]::-webkit-slider-thumb {
   cursor: pointer;
 }
 
-span {
-  font-weight: bold;
-}
 .inputPrice {
   border: 14.22px solid #ffadef;
   width: 1325px;

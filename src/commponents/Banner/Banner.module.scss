@@ -4,82 +4,95 @@
 .banner_container {
   background-color: #ffffff;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin-left: 3%;
   flex-direction: row;
   height: 750px;
   align-items: center;
 }
 
 .text {
-  gap: 40px;
   display: flex;
   text-align: left;
   flex-direction: column;
+  gap: 6rem;
 
   .title {
     color: #e78ead;
     font-family: $font-Comfortaa;
-    font-size: 6rem;
+    font-size: 4.9rem;
     font-weight: 400;
-    line-height: 1.2;
   }
+  .ul {
+    gap: 2.2rem;
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    list-style: none;
+  }
+
   .sub_title {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    list-style-position: outside;
+    padding-left: 2%;
     color: $color_primary;
     font-family: $font_Montserrat;
-    font-size: 30px;
+    font-size: 2rem;
   }
 }
 
 .img_banner {
   display: flex;
   justify-content: center;
-  width: 800px;
-  height: 500px;
+  margin-top: 5%;
+  width: 900px;
+  height: 800px;
 }
 
-@media screen and (max-width: $breackpoint_xl) {
+@media screen and (max-width: 1800px) {
   .banner_container {
     height: 750px;
     .text {
-      margin-right: 450px;
+      margin-right: 10%;
     }
 
     .title {
-      font-size: 70px;
+      font-size: 3.5rem;
     }
     .sub_title {
-      font-size: 26px;
+      font-size: 1.7rem;
     }
   }
 
   .img_banner {
-    height: 100px;
-    width: 100px;
+    height: 800px;
+    width: 800px;
   }
 }
 
-@media screen and (max-width: $breackpoint_md) {
+@media screen and (max-width: 1600px) {
   .banner_container {
-    height: 750px;
+    height: 650px;
   }
 
   .text {
-    margin-right: 350px;
     .title {
-      font-size: 50px;
+      font-size: 3.2rem;
     }
     .sub_title {
-      font-size: 24px;
+      font-size: 1.5rem;
     }
   }
 
   .img_banner {
-    height: 100px;
-    width: 100px;
+    height: 900px;
+    width: 700px;
   }
 }
 
-@media screen and (max-width: $breackpoint_xsm) {
+@media screen and (max-width: 1200px) {
   .banner_container {
     height: 750px;
   }

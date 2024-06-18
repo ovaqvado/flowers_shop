@@ -1,7 +1,7 @@
 import AppRouter from "./AppRouter";
 import { Header } from "./commponents/Header/Header";
 import Footer from "./commponents/Footer/Footer";
-import Style from './App.scss';
+import Style from "./App.scss";
 
 function App() {
   return (
@@ -9,7 +9,6 @@ function App() {
       <Header />
       <AppRouter />
       <Footer />
-
     </div>
   );
 }

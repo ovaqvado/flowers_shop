@@ -8,7 +8,7 @@ function Cards(props) {
     <div className={Style.card}>
       <h3>{props.item.name}</h3>
       <p>{props.item.price}</p>
-      <img src={props.item.img} />
+      {/* <img src={props.item.img} /> */}
     </div>
   );
 }

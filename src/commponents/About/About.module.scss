@@ -60,12 +60,12 @@
   gap: 40px;
   margin: 60px;
   padding: 100px;
-  border: 1px solid $color_primary;
-  border-radius: 20px;
+  // border: 1px solid $color_primary;
+  // border-radius: 20px;
 }
 
 .reviews {
-  width: 560px;
+  width: 90%;
   height: 650px;
   overflow: hidden;
   position: relative;
@@ -77,29 +77,4 @@
   border: 1px solid #e6e6e6;
   border-radius: 8px;
   box-sizing: border-box;
-}
-
-.site_reviews {
-  box-sizing: border-box;
-  text-decoration: none;
-  color: #b3b3b3;
-  font-size: 10px;
-  font-family: YS Text, sans-serif;
-  padding: 0 20px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-  left: 0;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: block;
-  max-height: 14px;
-  white-space: nowrap;
-  padding: 0 16px;
-  box-sizing: border-box;
-}
-
-.google_reviews {
-  height: 500px;
 }

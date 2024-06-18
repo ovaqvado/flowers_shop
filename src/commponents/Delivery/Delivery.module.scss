@@ -1,4 +1,5 @@
 @import "../../styles/variables";
+
 .delivery_container {
   display: flex;
   align-items: center;
@@ -7,16 +8,32 @@
   background: url("./images/bg_delivery.svg");
   background-size: contain;
   height: 1080px;
-  // width: 100px;
   background-repeat: no-repeat;
   left: 0;
   right: 0;
   gap: 100px;
+  padding-bottom: 200px;
 }
+
+.img {
+  width: 282px;
+  height: 273px;
+  margin-bottom: 30px;
+}
+
+.subtitle {
+  font-size: 1.9rem;
+  font-size: $font_Montserrat;
+  font-weight: 500;
+  color: $color_primary;
+}
+
+// Доставка
 .title_delivery {
   font-family: $font_Montserrat;
   font-size: 4rem;
   font-weight: 450;
+  color: $color_primary;
 }
 
 .cards_info {
@@ -39,7 +56,7 @@
   height: 390px;
   line-height: 35px;
 }
-
+// Оплата
 .card_pay {
   display: flex;
   flex-direction: column;
@@ -50,42 +67,80 @@
   line-height: 35px;
 }
 
-.img {
-  width: 282px;
-  height: 273px;
-  margin-bottom: 30px;
-}
-
-.subtitle {
-  font-size: 1.9rem;
-  font-family: var(--font-globalFont);
-  font-weight: 500;
-}
-
 .text_info {
   margin-top: 30px;
   margin-bottom: 30px;
   font-family: $font_Montserrat;
   font-size: 1.4rem;
+  color: $color_secondary;
 }
 
-.pay_select {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  .select {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    .select_text {
-      font-size: 30px;
-    }
-  }
+.bank_cards {
+  width: 105px;
+  height: 40px;
+}
+
+.yandex_card {
+  width: 50px;
+  height: 40px;
+}
+
+.mastercard {
+  width: 70px;
+  height: 40px;
 }
 
 .payments {
   display: flex;
+  margin-top: 20px;
   flex-direction: row;
-  margin-top: 30px;
-  gap: 40px;
+  gap: 30px;
+}
+
+// select Стилизация
+.pay_select {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.select_text {
+  font-size: 1.7rem;
+  font-weight: 450;
+  color: $color_primary;
+}
+
+.select {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  width: 700px;
+  gap: 10px;
+}
+
+.select_address {
+  width: 300px;
+  height: 45px;
+  font-size: 20px;
+  border-radius: 15px;
+  padding: 10px;
+  background: none;
+  &:hover {
+    background: radial-gradient(
+      53.02% 156.82% at 50.03% 49.97%,
+      #e86795 0%,
+      rgba(245, 185, 215, 0.350984) 74.6%,
+      rgba(252, 230, 251, 0) 100%
+    );
+  }
+}
+
+.select_primary {
+  background-color: #f9e6f1;
+}
+
+.select_secondary {
+  background-color: white;
 }

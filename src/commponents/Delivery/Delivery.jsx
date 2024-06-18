@@ -22,14 +22,24 @@ function Delivery() {
               с 8:00 до 22:00
             </p>
             <div className={Style.select}>
-              <p className={Style.select_text}>Узнать стоимость доставки</p>
-              <select className="" name="" id="">
-                <option value="">Выберите адрес доставки</option>
-                <option value="1">Сочи 200-Рублей</option>
-                <option value="2">Дагомыс 400-Рублей</option>
-                <option value="3">Мацеста 400-Рублей</option>
-                <option value="4">Адлер 600-Рублей</option>
-                <option value="5">Кудепста 250-Рублей</option>
+              <p className={Style.select_text}>Cтоимость доставки:</p>
+              <select className={Style.select_address}>
+                <option value="">Узнать</option>
+                <option className={Style.select_primary} value="1">
+                  Сочи 200-Рублей
+                </option>
+                <option className={Style.select_secondary} value="2">
+                  Дагомыс 400-Рублей
+                </option>
+                <option className={Style.select_primary} value="3">
+                  Мацеста 400-Рублей
+                </option>
+                <option className={Style.select_secondary} value="4">
+                  Адлер 600-Рублей
+                </option>
+                <option className={Style.select_primary} value="5">
+                  Кудепста 250-Рублей
+                </option>
               </select>
             </div>
           </div>

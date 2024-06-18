@@ -1,5 +1,5 @@
 import React from "react";
-import Style from "./Contacts.module.css";
+import Style from "./Contacts.module.scss";
 import phone from "./image/phone.svg";
 import clock from "./image/clock.svg";
 import markLocation from "./image/markLocation.svg";

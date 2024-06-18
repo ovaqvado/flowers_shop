@@ -1,44 +1,50 @@
+@import "../../styles/variables";
+.main_container {
+  position: absolute;
+  margin-left: 100px;
+  left: 150px;
+  border-radius: 20px;
+  background: #ffffffd2;
+  width: 570px;
+  height: 550px;
+  border: 2px solid rgba(209, 209, 209, 0.61);
+}
+
 .title_contact {
-  font-family: var(--font-globalFont);
+  font-family: $font_Montserrat;
   font-size: 70px;
   font-weight: 500;
   text-align: left;
   padding-left: 85px;
   padding-top: 30px;
-  color: #333333;
+  color: $color_primary;
+  margin-top: 50px;
+  margin-bottom: 70px;
 }
 
 .text {
-  font-family: var(--font-globalFont);
+  font-family: $font_Montserrat;
   font-size: 20px;
   font-weight: 400;
   text-align: left;
   margin-left: 30px;
-  color: #666666;
+  color: $color_secondary;
 }
 .contact {
   display: flex;
+  align-items: center;
   margin-left: 61px;
   margin-bottom: 40px;
 }
 
 .mark_location {
   width: 43px;
-  height: 62px;
-}
-.main_container {
-  position: absolute;
-  margin-left: 100px;
-  left: 150px;
-  border-radius: 20px;
-  background-color: #fce6fb;
-  width: 550px;
-  height: 530px;
+  height: 50px;
 }
 
 .img {
-  width: 50px;
-  height: 50px;
+  width: 43px;
+  height: 43px;
 }
 
 @media (max-width: 1800px) {

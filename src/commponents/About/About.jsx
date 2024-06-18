@@ -79,6 +79,12 @@ const About = () => {
         <div className={Style.block_reviews}>
           <div className={Style.reviews}>
             <iframe
+              src="https://swdgts.ru/9ae5e9cc027a91fe063694081a32cc1f"
+              width="100%"
+              height="700"
+              frameborder="0"
+            ></iframe>
+            {/* <iframe
               className={Style.link_reviews}
               title="reviews"
               src="https://yandex.ru/maps-reviews-widget/206741903945?comments"
@@ -88,7 +94,7 @@ const About = () => {
               href="https://yandex.ru/maps/org/moreflowers/206741903945/"
             >
               MoreFlowers на карте Сочи — Яндекс Карты
-            </a>
+            </a> */}
           </div>
         </div>
       </div>

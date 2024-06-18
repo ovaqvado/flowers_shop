@@ -1,5 +1,5 @@
 import React from "react";
-import Style from "./Maps.module.css";
+import Style from "./Maps.module.scss";
 import Contacts from "../Contacts/Contacts";
 function GoogleMap() {
   return (

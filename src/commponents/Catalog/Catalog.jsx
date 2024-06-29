@@ -1,6 +1,10 @@
 import React from "react";
-import Style from "./Catalog.module.css";
+import Style from "./Catalog.module.scss";
 import { useState } from "react";
+import TypeBar from "./TypeBar";
+import FlowerList from "./FlowerList";
+import Pages from "./Pages";
+import PriceSlider from "./PriceSlider";
 
 function Catalog() {
   const [price, setPrice] = useState(50); // Начальное значение цены
@@ -10,30 +14,23 @@ function Catalog() {
   };
 
   return (
-    <div>
-      <fieldset className={Style.inputPrice}>
-        <legend>Подобрать по цене</legend>
-        <div>
-          <input
-            type="range"
-            id="price"
-            name="price"
-            min="0"
-            max="100" // Устанавливаем максимальное значение диапазона
-            value={price}
-            onChange={handlePriceChange}
-          />
-          {/* <input type="range" /> */}
-        </div>
+    <div className={Style.catalog_box}>
+      <TypeBar />
+      <fieldset className={Style.fieldPrice}>
+        <legend className={Style.fieldText}>Подобрать по цене</legend>
         <div className={Style.cardPrice}>
           <div className={Style.itemCardPrice}>
-            <p className={Style.textPrice}>От:{price}</p>
+            <p className={Style.textPrice}>От {price} р</p>
           </div>
+          <hr className={Style.hr_catalog} />
           <div className={Style.itemCardPrice}>
-            <p className={Style.textPrice}>До:{price}</p>
+            <p className={Style.textPrice}>До {price} р</p>
           </div>
         </div>
       </fieldset>
+
+      <FlowerList className={Style.cards_catalog_box} />
+      {/* <Pages /> */}
     </div>
   );
 }

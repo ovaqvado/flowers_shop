@@ -6,10 +6,12 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: url("../../img/background_about.svg");
-  background-size: contain;
+  background: url("../../img/bg_about.svg");
+  background-size: cover;
   background-repeat: no-repeat;
-  margin-top: 100px;
+  padding-top: 19rem;
+  margin-bottom: 5rem;
+  height: 140rem;
 }
 
 .service {
@@ -17,29 +19,28 @@
   justify-content: center;
   flex-direction: column;
   gap: 50px;
-  width: 1400px;
+  width: 75%;
   align-items: center;
-  text-align: left;
+  text-align: justify;
 }
 
 .title {
   font-family: $font_Montserrat;
-  font-size: 35px;
+  font-size: 2.5rem;
   font-weight: 450;
   color: $color_primary;
 }
 
 .subtitle {
   font-family: $font_Montserrat;
-  font-size: 30px;
+  font-size: 2rem;
   font-weight: 450;
   color: $color_primary;
-  margin-bottom: 10px;
   margin-top: 10px;
 }
 
 .text_info {
-  font-size: 25px;
+  font-size: 1.5rem;
   font-weight: 400;
   color: $color_secondary;
 }
@@ -47,26 +48,38 @@
 .container_text {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  list-style: url("../../img/flower_red_list.svg");
-  list-style-position: inside;
+  gap: 10px;
+  list-style: none;
+}
+
+.container_all_text {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: justify;
+
+  gap: 1.5rem;
 }
 
 // reviews
 .box_reviews {
   display: flex;
   justify-content: center;
+  text-align: center;
   flex-direction: column;
-  gap: 40px;
-  margin: 60px;
-  padding: 100px;
-  // border: 1px solid $color_primary;
-  // border-radius: 20px;
+  gap: 3rem;
+  margin-bottom: 10rem;
+  padding: 7rem;
+  width: 80%;
+}
+
+.title_about {
+  font-weight: 400;
+  font-family: $font_Montserrat;
+  font-size: 2.7rem;
 }
 
 .reviews {
-  // width: 90%;
-  // height: 50px;
   overflow: hidden;
   position: relative;
 }
@@ -77,4 +90,20 @@
   border: 1px solid #e6e6e6;
   border-radius: 8px;
   box-sizing: border-box;
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+  padding-left: 10%;
+}
+
+.button_reviews {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  &:hover {
+    cursor: pointer;
+    color: #e86795;
+  }
 }

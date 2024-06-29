@@ -3,12 +3,12 @@ import Style from "./Maps.module.scss";
 import Contacts from "../Contacts/Contacts";
 function GoogleMap() {
   return (
-    <div className={Style.container_map}>
+    <div id="section2" className={Style.container_map}>
       <Contacts className={Style.Contacts} />
       <iframe
         title="maps_location"
         className={Style.GoogleMap}
-        src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=russia,%20sochi+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d293.39046539053516!2d39.7262124984982!3d43.59148761731336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40f5cb8927c0165f%3A0xae8f14b0005f9ecd!2sMoreflowers!5e1!3m2!1sru!2sru!4v1719572366798!5m2!1sru!2sru"
       ></iframe>
     </div>
   );
@@ -16,11 +16,6 @@ function GoogleMap() {
 
 export default GoogleMap;
 
-// useEffect(() => {
-//   const map = new window.google.maps.Map(document.getElementById("map"), {
-//     center: { lat: 45.03397526204213, lng: 38.91484237555835 },
-//     zoom: 12,
-//   });
-// }, []);
-
-// return <div id="map" style={{ width: "600px", height: "450px" }}></div>;
+{
+  /* <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d293.39046539053516!2d39.7262124984982!3d43.59148761731336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40f5cb8927c0165f%3A0xae8f14b0005f9ecd!2sMoreflowers!5e1!3m2!1sru!2sru!4v1719572366798!5m2!1sru!2sru" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> */
+}

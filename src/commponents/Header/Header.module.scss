@@ -12,10 +12,10 @@
 }
 
 .logo_header {
-  margin-top: 15px;
-  margin-left: 40px;
-  width: 105px;
-  height: 82px;
+  margin-top: 1rem;
+  margin-left: 2rem;
+  width: 6.25rem;
+  height: 5.25rem;
 }
 
 .group_links {
@@ -23,17 +23,17 @@
   justify-content: center;
   flex-direction: row;
   align-items: center;
-  margin-right: 20px;
-  gap: 30px;
+  margin-right: 1.5rem;
+  gap: 2rem;
 
   .link {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 0.6rem;
     color: $color_primary;
     text-decoration: none;
     font-family: $font_Montserrat;
-    font-size: 25px;
+    font-size: 1.6rem;
     font-weight: 500;
     background: none;
     border: none;
@@ -49,28 +49,28 @@
 
 .basket {
   cursor: pointer;
-  width: 35px;
-  height: 33px;
+  width: 2rem;
+  height: 2rem;
   &:hover {
     cursor: pointer;
   }
 }
 
 .auth {
-  width: 33px;
-  height: 33px;
+  width: 2rem;
+  height: 2rem;
 }
 
 input {
-  height: 35px;
-  width: 230px;
+  height: 2.1rem;
+  width: 14rem;
   border: 1px solid black;
   color: black;
   border-radius: 5px;
-  padding: 7px;
+  padding: 0.5rem;
   background: none;
   font-family: $font_Montserrat;
-  font-size: 20px;
+  font-size: 1.3rem;
   &::placeholder {
     color: black;
     font-weight: 500;

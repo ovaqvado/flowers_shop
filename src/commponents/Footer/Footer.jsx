@@ -10,6 +10,7 @@ import mir from "./image/mir.svg";
 import mastercard from "./image/mastercard.svg";
 import visa from "./image/visa.svg";
 import logo_end_footer from "./image/logo_end_footer.svg";
+import yandex_pay from "./image/yandex_pay.svg";
 
 function Footer() {
   return (
@@ -66,9 +67,14 @@ function Footer() {
           <div className={Style.payments}>
             <img className={Style.img_payments} src={visa} alt="visa" />
             <img
-              className={Style.img_payments}
+              className={Style.mastercard}
               src={mastercard}
               alt="mastercard"
+            />
+            <img
+              className={Style.yandex_pay}
+              src={yandex_pay}
+              alt="yandex_pay"
             />
             <img className={Style.img_payments} src={mir} alt="mir" />
           </div>

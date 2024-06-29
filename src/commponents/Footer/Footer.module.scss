@@ -1,73 +1,81 @@
 @import "../../styles/_variables.scss";
+
 .container_footer {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: $color_primary;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
+// 1 Block
 .footer_box {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  width: 1800px;
-  margin-top: 30px;
+  width: 100%;
+  margin-top: 1.8rem;
 }
 
 .logo_social {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  align-items: center;
 }
 
 .logo_footer {
-  width: 150px;
-  height: 110px;
+  width: 9rem;
+  height: 7rem;
+  // margin-top: 0.6rem;
 }
 
 .group_links {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 15px;
-  margin-top: 35px;
-  margin-bottom: 35px;
+  gap: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .soc_links {
-  height: 50px;
-  width: 50px;
+  height: 3rem;
+  width: 3rem;
   transition: 0.6s;
+  border-radius: 50%;
   &:hover {
     transform: scale(1.5);
   }
 }
 
+// 2 Block
 .nav_payments {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 50px;
+  gap: 2.7rem;
 }
 
 .nav_menu {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  height: 70px;
+  height: 4.5rem;
   text-align: center;
   align-items: center;
   justify-items: center;
-  gap: 10px;
+  gap: 1rem;
 }
 
 .link {
   color: #fce6fb;
   text-decoration: none;
-  margin: 0 15px;
+  margin: 0 1rem;
   font-family: $font_Montserrat;
-  font-size: 25px;
+  font-size: 1.5rem;
   font-weight: 400;
   background: none;
   border: none;
@@ -79,93 +87,112 @@
   }
 }
 
+.payments {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
 .img_payments {
-  width: 90px;
-  height: 25px;
+  width: 6rem;
+  height: 2.5rem;
+}
+
+.yandex_pay {
+  width: 3.2rem;
+  height: 2.5rem;
+}
+
+.mastercard {
+  width: 4rem;
+  height: 2.5rem;
 }
 
 .info {
   display: flex;
   flex-direction: column;
   text-align: right;
+  gap: 2.2rem;
   color: #fce6fb;
   font-family: $font_Montserrat;
-  font-size: 25px;
+  font-size: 1.5rem;
   font-weight: 400;
 }
 
+// 3 Block
 .end_logo_text {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  gap: 10px;
-  margin-top: -15px;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .text_end_footer {
   font-family: "Comfortaa", sans-serif;
   color: #fce6fb;
-  font-size: 45px;
+  font-size: 2.6rem;
   font-weight: 700;
 }
 
 .logo_end_footer {
-  width: 400px;
-  height: 70px;
+  width: 25rem;
+  height: 4rem;
 }
 
 hr {
-  width: 1720px;
-  margin-top: -10px;
+  width: 95%;
 }
 
-@media only screen and (min-width: 1440px) {
-  .footer_box {
-    width: 1350px;
-  }
+// @media only screen and (min-width: 1440px) {
+//   .footer_box {
+//     width: 1350px;
+//   }
 
-  .logo_footer {
-    width: 90px;
-    height: 70px;
-  }
+//   .logo_footer {
+//     width: 90px;
+//     height: 70px;
+//   }
 
-  .group_links {
-    gap: 10px;
-  }
+//   .group_links {
+//     gap: 10px;
+//   }
 
-  .soc_links {
-    height: 37px;
-    width: 37px;
-  }
+//   .soc_links {
+//     height: 37px;
+//     width: 37px;
+//   }
 
-  .nav_menu {
-    height: 45px;
-  }
+//   .nav_menu {
+//     height: 40px;
+//   }
 
-  .link {
-    font-size: 18px;
-  }
+//   .link {
+//     font-size: 18px;
+//   }
 
-  .img_payments {
-    width: 80px;
-    height: 20px;
-  }
+//   .img_payments {
+//     width: 80px;
+//     height: 20px;
+//   }
 
-  .info {
-    font-size: 17px;
-  }
+//   .info {
+//     font-size: 17px;
+//   }
 
-  .text_end_footer {
-    font-size: 30px;
-  }
+//   .text_end_footer {
+//     font-size: 30px;
+//   }
 
-  .logo_end_footer {
-    width: 250px;
-    height: 45px;
-  }
+//   .logo_end_footer {
+//     width: 250px;
+//     height: 40px;
+//   }
 
-  hr {
-    width: 1300px;
-  }
-}
+//   hr {
+//     width: 1300px;
+//   }
+// }

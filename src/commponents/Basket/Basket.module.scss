@@ -1,3 +1,26 @@
-.basket_container {
-  background-image: url(../../img/basket_bg.svg);
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.modal-wrapper {
+  background: radial-gradient(
+    49.98% 49.98% at 50% 50%,
+    #f5b7cd 0%,
+    #fae8ed 80%,
+    #fdf0f8 100%
+  );
+  width: 69rem;
+  height: 800px;
+  border-radius: 50px;
+}
+
+.modal-close-btn {
 }

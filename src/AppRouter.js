@@ -4,8 +4,11 @@ import Basket from "./commponents/Basket/Basket";
 import Catalog from "./commponents/Catalog/Catalog";
 import Delivery from "./commponents/Delivery/Delivery";
 import Main from "./commponents/Main/Main";
-import Auth from "./commponents/Auth/Auth";
+// import Auth from "./commponents/Auth/Auth";
+import RegisterPage from "./commponents/Auth/RegisterPage";
+import LoginPage from "./commponents/Auth/LoginPage";
 import Style from "./App.scss";
+import Flower from "./commponents/Flower/Flower";
 
 function AppRouter() {
   return (
@@ -15,7 +18,10 @@ function AppRouter() {
       <Route path="/Delivery" element={<Delivery />} />
       <Route path="/About" element={<About />} />
       <Route path="/Basket" element={<Basket />} />
-      <Route path="/Auth" element={<Auth />} />
+      <Route path="/Login" element={<LoginPage />} />
+      <Route path="/Register" element={<RegisterPage />} />
+      <Route path="/Flower" element={<Flower />} />
+      <Route path="/Flower/:id" element={<Flower />} />
     </Routes>
   );
 }

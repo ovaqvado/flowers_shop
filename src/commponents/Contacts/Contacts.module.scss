@@ -1,121 +1,50 @@
 @import "../../styles/variables";
 .main_container {
   position: absolute;
-  margin-left: 100px;
-  left: 150px;
-  border-radius: 20px;
+  margin-left: 6.25rem;
+  margin-bottom: 1.5rem;
+  left: 9.3rem;
+  border-radius: 1.25rem;
   background: #ffffffd2;
-  width: 570px;
-  height: 550px;
+  width: 35.6rem;
+  height: 35.5rem;
   border: 2px solid rgba(209, 209, 209, 0.61);
+  backdrop-filter: blur(10px);
 }
 
 .title_contact {
   font-family: $font_Montserrat;
-  font-size: 70px;
+  font-size: 4.4rem;
   font-weight: 500;
   text-align: left;
-  padding-left: 85px;
-  padding-top: 30px;
+  padding-left: 5rem;
+  padding-top: 1.9rem;
   color: $color_primary;
-  margin-top: 50px;
-  margin-bottom: 70px;
+  margin-top: 3.1rem;
+  margin-bottom: 4.4rem;
 }
 
 .text {
   font-family: $font_Montserrat;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 400;
   text-align: left;
-  margin-left: 30px;
+  margin-left: 1.9rem;
   color: $color_secondary;
 }
 .contact {
   display: flex;
   align-items: center;
-  margin-left: 61px;
-  margin-bottom: 40px;
+  margin-left: 3.8rem;
+  margin-bottom: 2.5rem;
 }
 
 .mark_location {
-  width: 43px;
-  height: 50px;
+  width: 2.7rem;
+  height: 3.1rem;
 }
 
 .img {
-  width: 43px;
-  height: 43px;
-}
-
-@media (max-width: 1800px) {
-  .title_contact {
-    font-size: 50px;
-    text-align: left;
-    padding-left: 50px;
-    padding-top: 20px;
-  }
-
-  .text {
-    font-size: 17px;
-    font-weight: 400;
-    text-align: left;
-    margin-left: 20px;
-    color: #666666;
-  }
-  .contact {
-    display: flex;
-    margin-left: 40px;
-    margin-bottom: 40px;
-  }
-
-  .mark_location {
-    width: 37px;
-    height: 47px;
-  }
-  .main_container {
-    margin-left: 90px;
-    border-radius: 20px;
-    background-color: #fce6fb;
-    width: 450px;
-    height: 430px;
-  }
-
-  .img {
-    width: 40px;
-    height: 40px;
-  }
-}
-
-@media (max-width: 1600px) {
-  .title_contact {
-    font-size: 40px;
-    text-align: left;
-    padding-left: 40px;
-    padding-top: 20px;
-  }
-
-  .text {
-    font-size: 15px;
-    margin-left: 20px;
-  }
-  .contact {
-    margin-left: 40px;
-    margin-bottom: 40px;
-  }
-
-  .mark_location {
-    width: 34px;
-    height: 43px;
-  }
-  .main_container {
-    margin-left: 90px;
-    border-radius: 20px;
-    width: 430px;
-    height: 390px;
-  }
-
-  .img {
-    width: 39px;
-    height: 39px;
-  }
+  width: 2.7rem;
+  height: 2.7rem;
 }

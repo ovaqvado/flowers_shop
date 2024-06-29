@@ -3,38 +3,13 @@
   align-items: center;
   justify-content: center;
   background: url("../../img/bg_maps.svg");
-  background-size: contain;
+  background-size: 100%;
   background-repeat: no-repeat;
 }
 
 .GoogleMap {
-  width: 1500px;
-  height: 850px;
-  margin-top: 45px;
-  margin-bottom: 45px;
-  border-radius: 125px;
-}
-
-@media (max-width: 1800px) {
-  .container_map {
-  }
-
-  .GoogleMap {
-    width: 1300px;
-    height: 750px;
-    margin-top: 55px;
-    border-radius: 105px;
-  }
-}
-@media (max-width: 1600px) {
-  .container_map {
-    height: 800px;
-  }
-
-  .GoogleMap {
-    width: 1100px;
-    height: 550px;
-    margin-top: 55px;
-    border-radius: 105px;
-  }
+  width: 80%;
+  height: 53rem;
+  margin-bottom: 2.8rem;
+  border-radius: 7.8rem;
 }

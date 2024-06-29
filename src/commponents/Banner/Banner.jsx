@@ -2,6 +2,7 @@ import React from "react";
 import Style from "./Banner.module.scss";
 import banner_img from "../../img/banner_img.svg";
 import { ReactComponent as PtmReportLogo } from "../../img/list_banner.svg";
+import { ReactComponent as BlueFlower } from "../../img/blueFlower.svg";
 
 function Banner() {
   return (
@@ -15,19 +16,19 @@ function Banner() {
           <li className={Style.sub_title}>
             <PtmReportLogo />
             <span>
-              {" "}
               Букеты собираются <br />
               опытными флористами
             </span>
           </li>
           <li className={Style.sub_title}>
-            <PtmReportLogo />
+            <BlueFlower />
+
             <span>На первый заказ скидка 7%</span>
           </li>
           <li className={Style.sub_title}>
             <PtmReportLogo />
+
             <span>
-              {" "}
               Бесплатная доставка
               <br /> по городу от 3000р
             </span>

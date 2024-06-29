@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 import Style from "./Header.module.scss";
 import logo from "../../img/logo_img.svg";
-import { ReactComponent as Basket } from "../../img/Basket.svg";
 import { ReactComponent as Auth } from "../../img/icon_profile.svg";
-import { useState } from "react";
+import { ReactComponent as Basket } from "../../img/Basket.svg";
+// import { useState } from "react";
 
 export const Header = () => {
   const smoothScrollToAnchor = (anchor) => {
@@ -15,8 +15,6 @@ export const Header = () => {
       });
     }
   };
-
-  const [open, closeBasket] = useState();
 
   return (
     <header className={Style.header}>
@@ -48,8 +46,11 @@ export const Header = () => {
           О нас
         </Link>
 
-        <Basket className={Style.basket} alt="Basket" />
-        <Link to="/Auth" className={Style.link}>
+        <Link className={Style.basket}>
+          <Basket className={Style.Basket} />
+        </Link>
+
+        <Link to="/login" className={Style.link}>
           <Auth className={Style.auth} />
         </Link>
         <div className={Style.box}>

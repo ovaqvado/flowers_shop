@@ -6,9 +6,7 @@ import Style from "./Card.module.scss";
 function Cards(props) {
   return (
     <div className={Style.card}>
-      <h3>{props.item.name}</h3>
-      <p>{props.item.price}</p>
-      {/* <img src={props.item.img} /> */}
+      <img className={Style.img_card_slider} src={props.item.img} />
     </div>
   );
 }
